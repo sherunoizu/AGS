@@ -1,0 +1,49 @@
+@import 'libs/bootstrap-reboot.min';
+// @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@600&display=swap');
+// @import 'base/variables';
+// @import 'base/mixins';
+
+* {
+    // font-family: 'Inter', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-color: #124179;
+    --main-color-rgba: #12407959;
+    --social-color: #4e84c7a8;
+    --text-color: #ffffff;
+    --subtext-color: #feffff;
+    --subtext-background: #fefefe80;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: white;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    // background: linear-gradient(208.18deg, #67f373 9.05%, #084d27 76.74%);
+    background: var(--main-color);
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+
+
+@import 'blocks/header';
+@import 'blocks/promo';
+@import 'blocks/privileges';
+@import 'blocks/companyVideo';

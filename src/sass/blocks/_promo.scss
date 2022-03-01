@@ -1,0 +1,29 @@
+.promo {
+    padding-top: 60px;
+
+    min-height: 650px;
+    background:url(../img/bg2.jpeg) center (center/cover) no-repeat;
+    object-fit: cover;
+    .container {
+        width: 1300px;
+    }
+    &__title {
+        // text-align: center;
+        width: 800px;
+        font-size: 60px;
+        line-height: 85px;
+        font-weight: 700;
+        color: var(--text-color);
+        margin-bottom: 0;
+    }
+    &__subtitle {
+        // background: var(--subtext-background);
+        font-size: 28px;
+        // color: var(--main-color);
+        color: #fff;
+        font-weight: 500;
+        width: 747px;
+    }
+    
+    
+}

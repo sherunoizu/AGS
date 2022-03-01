@@ -1,0 +1,44 @@
+.privileges {
+    padding-top: 70px;
+    padding-bottom: 50px;
+    min-height: calc(100vh - 105px);
+    &__wrapper {
+        padding: 70px 20px 0 20px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 350px);
+        row-gap: 50px;
+        justify-content: space-between;
+    }
+    &__item {
+        display: grid;
+        grid-template-rows:70px 54px auto;
+        max-width: 300px;
+        row-gap: 20px;
+        
+    }
+    &__icon {
+        display: block;
+        margin: 0 auto;
+        width: 70px;
+        height: 70px;
+    }
+    &__title {
+        font-size: 30px;
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    &__subtitle {
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 700;
+        font-size: 18px;
+        // margin-top: 32px;
+    }
+    &__descr {
+        font-weight: 300;
+        font-size: 14px;
+        text-align: center;
+        // margin-top: 20px;
+    }
+}
