@@ -1,3 +1,4 @@
+// require('dotenv').config();
 
 const circle = document.querySelector(`.progress-ring__circle`);
 const radius = circle.r.baseVal.value;
@@ -110,4 +111,36 @@ function maskedInput() {
 
 maskedInput();
 
+function mailer() {
+    const nodemailer = require('nodemailer');
+
+    console.log(process.env.EMAIL);
+
+    const transporter = nodemailer.createTransport({
+        service: 'gmail',
+        auth: {
+            user: process.env.EMAIL,
+            pass: process.env.PASSWORD
+        }
+    });
+
+    const mailOptions = {
+        from: 'n79161418450@gmail.com',
+        to: 'n79161418450@gmail.com',
+        subject: 'Письмо отправленное через 1231234',
+        text: 'Текст самого письма'
+    };
+
+    transporter.sendMail(mailOptions);
+}
+
+function sendForm() {
+    const submitBtn = document.querySelector(`consultation-form__button`);
+    submitBtn.addEventListener(`click`, (e) => {
+        e.preventDefault();
+        mailer();
+    });
+}
+
+sendForm();
 
