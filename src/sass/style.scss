@@ -1,6 +1,6 @@
 @import 'libs/bootstrap-reboot.min';
 // @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@600&display=swap');
 // @import 'base/variables';
 // @import 'base/mixins';
@@ -14,12 +14,22 @@
 }
 
 :root {
+    
     --main-color: #124179;
     --main-color-rgba: #12407959;
     --social-color: #4e84c7a8;
     --text-color: #ffffff;
     --subtext-color: #feffff;
     --subtext-background: #fefefe80;
+    --left-background: #4e84c7;
+    --right-background: #3165a5;
+}
+
+::-moz-selection {
+    background: var(--social-color);
+}
+::selection {
+    background: var(--social-color);
 }
 
 ::-webkit-scrollbar {
@@ -47,8 +57,12 @@
 }
 
 
-
+@import 'blocks/title';
 @import 'blocks/header';
 @import 'blocks/promo';
 @import 'blocks/privileges';
 @import 'blocks/companyVideo';
+@import 'blocks/consultation';
+@import 'blocks/footer';
+
+@import 'blocks/privacy';

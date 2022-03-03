@@ -47,7 +47,7 @@
 
     <section class="promo">
         <div class="container">
-            <h1 class="promo__title">Компания «АльфаГидроСтрой»</h1>
+            <h1 class="title title-left_fz60">Компания <span>"АльфаГидроСтрой"</spa></h1>
             <h2 class="promo__subtitle">устройство и обслуживание инженерных сетей по высшему разряду!</h2>
             
         </div>
@@ -55,7 +55,7 @@
 
     <section class="privileges">
         <div class="container">
-            <h2 class="privileges__title">Наши преимущества</h2>
+            <h2 class="title">Наши преимущества</h2>
             <div class="privileges__wrapper">
                 <div class="privileges__item">
                     <img src="icons/privileges/complex.svg" alt="complex approach" class="privileges__icon">
@@ -99,7 +99,7 @@
         <div class="container">
 
             <div class="companyVideo__wrapper">
-                <h2 class="companyVideo__title">Видео о компании</h2>
+                <h2 class="title title-left_fz45">Видео о компании</h2>
     
                 <div class="svg__wrapper">
                     <svg class="progress-ring" width="120" height="120">
@@ -137,7 +137,98 @@
         
     </section>
 
-    
+
+    <section class="consultation">
+        <h2 class="title">Заказать звонок</h2>
+        <div class="consultation__descr">Просто заполните форму заявки<br>и мы перезвоним вам в удобное время</div>
+
+        <div class="consultation-form__wrapper">
+            <form action="#" id="consultation-form" class="consultation-form">
+               
+                <div class="ln">
+                    <label is="input-wrapper" class="input-wrapper">
+                        <span class="placeholder">Имя</span>
+                        <input class="text" name="name" required type="text">
+                    </label>
+                </div>
+                <div class="ln">
+                    <label is="input-wrapper" class="input-wrapper">
+                        <span class="placeholder">Телефон</span>
+                        <input id="phone-mask" class="text" name="phone" required type="tel">
+                    </label>
+                </div>
+                <div class="ln">
+                    <label is="input-wrapper" class="input-wrapper not-empty">
+                        <span class="placeholder">Город</span>
+                        <input class="text" name="city" required type="text" value="Москва">
+                    </label>
+                </div>
+                <div class="ln">
+                    <label class="input-wrapper">
+                        <span class="placeholder">Ваше сообщение</span>
+                        <textarea class="text textarea" name="text" id="text" ></textarea>
+                    </label class="input-wrapper">
+                </div>
+                <div class="ln">
+                    <b>Внимание!</b> Все поля обязательны для заполнения.<br>Отправляя форму, вы соглашаетесь с <a
+                        href="/policy.html" target="_blank">Политикой обработки данных</a>.
+                </div>
+                <div class="btn-wrapper">
+                    <button class="consultation-form__button">Отправить</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+    <section class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__left-half">
+                    <div class="footer__contacts">
+                        
+                        <div class="footer__callback">
+                            <h2 class="title-left_fz25">контакты</h2>
+                            <div class="footer__phones">
+                                <div class="footer__phones_title">телефоны:</div>
+                                <a href="tel:+79258895598" class="footer__phones-item">+7 (925) 889-55-98</a>
+                                <a href="tel:+74952225454" class="footer__phones-item">+7 (495) 222-54-54</a>
+                            </div>
+                            <div class="footer__social">
+                                <a href="https://www.instagram.com/ags_oz/" target="_blank" class="header__social-item">
+                                    <img src="icons/icons8-instagram.svg" alt="instagram">
+                                </a>
+                                <a href="#" target="_blank" class="footer__social-item">
+                                    <img src="icons/icons8-whatsapp.svg" alt="whatsApp">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__menu">
+                        <div class="footer__menu_item">Услуги</div>
+                        <div class="footer__menu_item">партнеры</div>
+                        <div class="footer__menu_item">галерея</div>
+                        <div class="footer__menu_item">о компании</div>
+                        <div class="footer__menu_item">главная</div>
+
+                    </div>
+                </div>
+                <div class="footer__right-half">
+                    <div class="logo_wrapper">
+                        <div class="footer__logo">АльфаГидроСтрой</div>
+                        <div class="footer__subtitle">устройство и обслуживание инженерных сетей</div>
+                    </div>
+                    <div class="footer__copyright">
+                        <div class="footer__copyright_item">© 2022 АльфаГидроСтрой</div>
+                        <a href="policy.html" target="_blank" class="footer__copyright_item">Политика
+                            конфиденциальности</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/imask.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

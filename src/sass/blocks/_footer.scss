@@ -1,0 +1,103 @@
+.footer {
+    padding: 80px 0;
+    background: linear-gradient(to right, var(--left-background) 60%, var(--right-background) 40%);
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        justify-content: space-around;
+    }
+
+    &__left-half {
+        padding-right: 200px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__phones {
+        margin-top: 38px;
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+        &_title {
+            margin-bottom: 20px;
+            color: #121212;
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 16px;
+        }
+        &-item {
+            color: #fefefe;
+            &:hover {
+                text-decoration: none;
+                color: rgb(90, 90, 90);
+            }
+        }
+    }
+    &__social {
+        margin-top: 20px;
+        display: flex;
+
+        justify-content: space-around;
+
+        &-item {
+            position: relative;
+            width: 36px;
+            height: 36px;
+            border-radius: 100%;
+            margin-right: 20px;
+
+            img {
+                transition: all .3s;
+                width: 36px;
+                height: 36px;
+
+                &:hover {
+                    transform: scale(1.3);
+                }
+
+            }
+        }
+    }
+    &__menu {
+        color: #fefefe;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+        &_item {
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+    }
+
+    &__right-half{
+        color: #121212;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+    &__logo {
+        color: #fefefe;
+        min-width: 380px;
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 28px;
+        text-align-last: right;
+    }
+    &__subtitle {
+        text-align: right;
+        font-size: 14px;
+        margin-top: 10px;
+        font-weight: 600;
+    }
+    &__copyright {
+        align-self: center;
+        &_item {
+            font-weight: 600;
+            &:nth-child(2) {
+                color: #121212;
+            }
+        }
+    }
+    
+}

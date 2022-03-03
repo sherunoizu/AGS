@@ -75,3 +75,39 @@ function hideVideo () {
 
 
 changeProgress();
+
+
+function focusedInput() {
+    const label = document.querySelectorAll(`.input-wrapper`);
+    const input = document.querySelectorAll(`.text`);
+    
+    for (let i = 0; i < input.length; i++) {
+       
+        input[i].addEventListener(`focus`, () => {
+            label[i].classList.add(`not-empty`);
+        });
+        input[i].addEventListener(`blur`, () => {
+            if (input[i].value == ``) {
+                
+                label[i].classList.remove(`not-empty`);
+            }
+                
+        });
+                
+    }
+}
+
+focusedInput();
+
+function maskedInput() {
+    // const telIput = document.querySelector(`input[name=phone]`);
+    // telIput.mask("+7 (999) 999-99-99");
+    var phoneMask = IMask(
+        document.getElementById('phone-mask'), {
+        mask: '+{7}(000)000-00-00'
+     });
+}
+
+maskedInput();
+
+
