@@ -59,7 +59,7 @@ function hideVideo () {
     const closeBtn = document.querySelector(`.btn_close`);
     
     video.style.transform = `translateX(-200%)`;
-    video.style.display = `none`;
+    // video.style.display = `none`;
     closeBtn.style.transform = `translate(30px,25px)`;
 
     setTimeout(() => {

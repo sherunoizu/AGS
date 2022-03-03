@@ -4,7 +4,8 @@
   "description": "my profile",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/mailer/mailer.js"
   },
   "author": "",
   "license": "ISC",
@@ -27,6 +28,17 @@
     "not dead"
   ],
   "dependencies": {
-    "node-sass": "^7.0.1"
-  }
+    "dotenv": "^16.0.0",
+    "node-sass": "^7.0.1",
+    "nodemailer": "^6.7.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sherunoizu/AGS.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/sherunoizu/AGS/issues"
+  },
+  "homepage": "https://github.com/sherunoizu/AGS#readme"
 }

@@ -24,17 +24,22 @@
 
 ::-webkit-scrollbar {
     width: 6px;
+    
 }
 
 ::-webkit-scrollbar-track {
     background: white;
+    
 }
 
 ::-webkit-scrollbar-thumb {
     border-radius: 20px;
     // background: linear-gradient(208.18deg, #67f373 9.05%, #084d27 76.74%);
     background: var(--main-color);
+    
 }
+
+
 
 .container {
     width: 1140px;
