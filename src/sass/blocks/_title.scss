@@ -6,6 +6,9 @@
     text-align: center;
     margin-bottom: 0;
     text-transform: uppercase;
+    &_white {
+        color: var(--text-color);
+    }
     &-left {
         &_fz60 {
             text-transform:uppercase;

@@ -111,36 +111,79 @@ function maskedInput() {
 
 maskedInput();
 
-function mailer() {
-    const nodemailer = require('nodemailer');
+// function mailer() {
+//     const nodemailer = require('nodemailer');
 
-    console.log(process.env.EMAIL);
+//     console.log(process.env.EMAIL);
 
-    const transporter = nodemailer.createTransport({
-        service: 'gmail',
-        auth: {
-            user: process.env.EMAIL,
-            pass: process.env.PASSWORD
-        }
-    });
+//     const transporter = nodemailer.createTransport({
+//         service: 'gmail',
+//         auth: {
+//             user: process.env.EMAIL,
+//             pass: process.env.PASSWORD
+//         }
+//     });
 
-    const mailOptions = {
-        from: 'n79161418450@gmail.com',
-        to: 'n79161418450@gmail.com',
-        subject: 'Письмо отправленное через 1231234',
-        text: 'Текст самого письма'
-    };
+//     const mailOptions = {
+//         from: 'n79161418450@gmail.com',
+//         to: 'n79161418450@gmail.com',
+//         subject: 'Письмо отправленное через 1231234',
+//         text: 'Текст самого письма'
+//     };
 
-    transporter.sendMail(mailOptions);
+//     transporter.sendMail(mailOptions);
+// }
+
+// function sendForm() {
+//     const submitBtn = document.querySelector(`consultation-form__button`);
+//     submitBtn.addEventListener(`click`, (e) => {
+//         e.preventDefault();
+//         mailer();
+//     });
+// }
+
+// sendForm();
+
+
+
+
+function flipCard() {
+    const flippingCard = document.querySelectorAll(`.flip-card`);
+
+    const front = document.querySelectorAll(`.flip-card-front`);
+    const back = document.querySelectorAll(`.flip-card-back`);
+
+
+    for (let i =0; i < flippingCard.length; i++) {
+        front[i].addEventListener(`click`, () => {
+            flippingCard[i].classList.add(`flipped`);
+        });
+        back[i].addEventListener(`click`, () => {
+            flippingCard[i].classList.remove(`flipped`);
+        });
+    }
+
+    // front.addEventListener(`click`, () => {
+    //     flippingCard[0].classList.add(`flipped`);
+    // });
+
+    // console.log(flippingCard[0].classList.contains(`flip-card`));
+    
+
+
+    // for (let i = 0; i < flippingCard.length; i++) {
+        
+    //     if (!(flippingCard[i].classList.contains(`flipped`))) {
+    //         flippingCard[i].addEventListener(`click`, () => {
+    //             console.log(`переворачиваю карточку`);
+    //             flippingCard[i].classList.add(`flipped`);
+    //             if (flippingCard[i].classList.contains(`flipped`)) {
+    //                 unflipCard(flippingCard[i]);
+    //             }
+    //     });
+    //     }
+        
+    // }
 }
-
-function sendForm() {
-    const submitBtn = document.querySelector(`consultation-form__button`);
-    submitBtn.addEventListener(`click`, (e) => {
-        e.preventDefault();
-        mailer();
-    });
-}
-
-sendForm();
+flipCard();
 

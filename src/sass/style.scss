@@ -16,6 +16,7 @@
 :root {
     
     --main-color: #124179;
+    --second-color: #4e84c7;
     --main-color-rgba: #12407959;
     --social-color: #4e84c7a8;
     --text-color: #ffffff;
@@ -57,12 +58,15 @@
 }
 
 
+
 @import 'blocks/title';
 @import 'blocks/header';
 @import 'blocks/promo';
 @import 'blocks/privileges';
 @import 'blocks/companyVideo';
 @import 'blocks/consultation';
+@import 'blocks/partners';
+@import 'blocks/services';
 @import 'blocks/footer';
 
 @import 'blocks/privacy';
