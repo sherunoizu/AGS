@@ -163,27 +163,28 @@ function flipCard() {
         });
     }
 
-    // front.addEventListener(`click`, () => {
-    //     flippingCard[0].classList.add(`flipped`);
-    // });
-
-    // console.log(flippingCard[0].classList.contains(`flip-card`));
-    
-
-
-    // for (let i = 0; i < flippingCard.length; i++) {
-        
-    //     if (!(flippingCard[i].classList.contains(`flipped`))) {
-    //         flippingCard[i].addEventListener(`click`, () => {
-    //             console.log(`переворачиваю карточку`);
-    //             flippingCard[i].classList.add(`flipped`);
-    //             if (flippingCard[i].classList.contains(`flipped`)) {
-    //                 unflipCard(flippingCard[i]);
-    //             }
-    //     });
-    //     }
-        
-    // }
 }
 flipCard();
+
+
+
+
+
+function menu() {
+    const humburger = document.querySelector(`.humburger`);
+    const overlay = document.querySelector(`.overlay`);
+    humburger.addEventListener(`click`, () => {
+        humburger.classList.toggle(`active`);
+        overlay.classList.toggle(`active`);
+        // hideMenu(humburger, overlay);
+        return;
+    });
+    overlay.addEventListener(`click`, () => {
+        humburger.classList.remove(`active`);
+        overlay.classList.remove(`active`);
+    });
+}
+
+menu();
+
 

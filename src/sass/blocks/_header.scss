@@ -28,11 +28,16 @@
         }
         &-item {
             font-weight: 500;
-            font-size: 17px;
+            font-size: 19px;
             text-transform: uppercase;
             letter-spacing: 0.78px;
             position: relative;
             cursor: pointer;
+
+            a {
+                color: inherit;
+                
+            }
 
             .humburger {
                 position: absolute;
@@ -48,14 +53,34 @@
                 justify-content: space-between;
                 padding-top: 10px;
                 padding-bottom: 10px;
+                transition: border .5s;
+                
                 &:focus {
                     outline: none;
                 }
                 span {
+                    transition: transform .5s;
+                    transition-timing-function: ease-out;
                     margin: 0 auto;
                     width: 35px;
                     height: 4px;
                     background-color: black;
+                }
+                &.active {
+                    border: 1px solid black;
+                    border-radius: 100%;
+                    span {
+                        margin-bottom: -4px;
+                        &:nth-child(1) {
+                            transform: translate(1px, 8px) rotate(-45deg);
+                        }
+                        &:nth-child(2) {
+                            display: none;
+                        }
+                        &:nth-child(3) {
+                            transform: translate(1px, -12px) rotate(45deg);
+                        }
+                    }
                 }
             }
         }

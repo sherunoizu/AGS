@@ -83,6 +83,9 @@
             .flip-card-inner {
                 transform: rotateY(180deg);
             }
+            .flip-card-front {
+                opacity: 0;
+            }
         }
 
         &-inner {
@@ -95,12 +98,10 @@
             transform-style: preserve-3d;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
         }
-        // &:hover {
-        //     box-shadow: none;
-        //     .flip-card-inner {
-        //         transform: rotateY(180deg);
-        //     }
-        // }
+        &-front {
+            transition: opacity 1.2s;
+        }
+        
     }
 
     .flip-card-front,
