@@ -189,6 +189,7 @@ function menu() {
     const humburger = document.querySelector(`.humburger`);
     const overlay = document.querySelector(`.overlay`);
     const menu = document.querySelector(`.header__menu-item`);
+
     console.log(menu);
     humburger.addEventListener(`click`, () => {
         humburger.classList.toggle(`active`);
@@ -196,6 +197,7 @@ function menu() {
         toggleHeader(humburger);
         return;
     });
+   
     overlay.addEventListener(`click`, () => {
         humburger.classList.remove(`active`);
         overlay.classList.remove(`active`);
