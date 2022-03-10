@@ -20,9 +20,9 @@ function toggleHeader(humburger) {
 function menu() {
     const humburger = document.querySelector(`.humburger`);
     const overlay = document.querySelector(`.overlay`);
-    const menu = document.querySelector(`.header__menu-item`);
+    // const menu = document.querySelector(`.header__menu-item`);
 
-    console.log(menu);
+    
     humburger.addEventListener(`click`, () => {
         humburger.classList.toggle(`active`);
         overlay.classList.toggle(`active`);

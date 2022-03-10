@@ -53,6 +53,7 @@
 
 
 .container {
+    
     width: 1140px;
     margin: 0 auto;
 }
@@ -60,7 +61,7 @@
 
 
 
-
+@import 'blocks/animation';
 @import 'blocks/title';
 @import 'blocks/header';
 @import 'blocks/menu';
@@ -73,3 +74,5 @@
 @import 'blocks/footer';
 
 @import 'blocks/privacy';
+@import 'blocks/services/servicesPromo';
+@import 'blocks/services/servicesCatalog';

@@ -10,8 +10,14 @@
         color: var(--text-color);
     }
     &-left {
+        &_fz80 {
+            text-transform: none;
+            text-align: left;
+            font-size: 80px;
+            line-height: 1.125;
+
+        }
         &_fz60 {
-            text-transform:uppercase;
             text-align: left;
             width: 800px;
             font-size: 60px;

@@ -63,9 +63,14 @@
         flex-direction: column;
         justify-content: space-between;
         
+        a {
+            color: #fefefe;
+
+        }
         &_item {
             text-transform: uppercase;
             font-weight: 600;
+            
         }
     }
 

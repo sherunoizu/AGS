@@ -17,7 +17,7 @@
                 </a>
                 <ul class="header__menu-list">
                     
-                    <li class="header__menu-item"><p class="hiding">меню</p>
+                    <li class="header__menu-item"><a class="hiding" href="#">главная</a>
                         <button class="humburger">
                             <span></span><span></span><span></span>
                         </button>
@@ -63,7 +63,7 @@
                             <a href="pages/gallery.html" class="menu__list_link">Галерея</a>
                         </li>
                         <li class="menu__list_item">
-                            <a href="" class="menu__list_link">Услуги</a>
+                            <a href="/pages/services.html" class="menu__list_link">список Услуг</a>
                         </li>
                         <li class="menu__list_item">
                             <a href="#partners" class="menu__list_link">партнеры</a>
@@ -81,7 +81,7 @@
                                 <img src="icons/icons8-whatsapp.svg" alt="whatsApp">
                             </a>
                         </div>
-                        <a href="#consultation-form"><button class="menu__button">Заказать звонок</button></a>
+                        <a href="#consultation"><button class="menu__button">Заказать звонок</button></a>
                     </div>
                 </div>
         </div>
@@ -164,7 +164,8 @@
             </div>
     
             <div class="secondScreen">
-                <iframe class="companyVideo__video" width="90%" height="520px" src="https://www.youtube.com/embed/8Zh3HD0FVAM" allowfullscreen></iframe>
+                <iframe  class="companyVideo__video" width="90%" height="520px"
+                    src="https://www.youtube.com/embed/8Zh3HD0FVAM" allowfullscreen allow="autoplay"></iframe>
     
                 <div class="btn_close">
                     <span></span>
@@ -172,12 +173,10 @@
                 </div>
             </div>
 
-
-            
+            <div class="anchor" id="consultation"></div>
+          
         </div>
-
-        
-        
+ 
     </section>
 
 
@@ -217,15 +216,15 @@
                         href="pages/policy.html" target="_blank">Политикой обработки данных</a>.
                 </div>
                 <div class="btn-wrapper">
-                    <button class="consultation-form__button">Отправить</button>
+                    <button class="consultation-form__button" id="partners">Отправить</button>
                 </div>
             </form>
         </div>
     </section>
 
-    <section id="partners" class="partners">
+    <section  class="partners">
         <div class="container">
-            <div class="title title_white">Наши партнеры</div>
+            <div class="title title_white" >Наши партнеры</div>
             <div class="partners__subtitle">Компания имеет давние партнёрские отношения с</div>
             <div class="partners__wrapper">
                 <div class="partners__item">
@@ -264,14 +263,15 @@
                             <img src="icons/partners/KBbt.png" alt="">
                         </picture>
                     </div>
-                    <div class="partners__item_name">Конструкторское бюро «Бестраншейные технологии»
+                    <div class="partners__item_name" >Конструкторское бюро «Бестраншейные технологии»
                     </div>
                 </div>
             </div>
+            <div class="anchor" id="services"></div>
         </div>
     </section>
 
-    <section id="services" class="services">
+    <section  class="services">
         <div class="container">
             <div class="title">наши услуги</div>
             <div class="services__subtitle">Наша компания предоставляет свои услуги 24 часа в сутки и 7 дней в неделю
@@ -390,24 +390,7 @@
             </div>
         </div>
     </section>
-
-
-    <div id="instafeed"></div>
-    
-
-    <script type="text/javascript">
-        var feed = new Instafeed({
-            get: 'user',
-            target: "instafeed-container",
-            resolution: 'low_resolution',
-            limit: 30,
-            accessToken:
-            'IGQVJYMUVsZAFEzMVptdFc1ejlpZAUZAOemNWN3VGU1JOSlROSDJhUmUyVzVGUEUtS3JJRURDYjk3eWRLOUlOOTBlM25Yclh0a3NZAQ29mWGtDZAXJRaV84OER0YjBDY1B6dHlDdGVvVlpTM1B4bGFfSU1GdgZDZD'
-        });
-        feed.run();
-    </script>
-
-
+   
     <section class="footer">
         <div class="container">
             <div class="footer__wrapper">
@@ -432,11 +415,11 @@
                         </div>
                     </div>
                     <div class="footer__menu">
-                        <div class="footer__menu_item">главная</div>
-                        <div class="footer__menu_item">партнеры</div>
-                        <div class="footer__menu_item">галерея</div>
-                        <div class="footer__menu_item">Услуги</div>
-                        <div class="footer__menu_item">о компании</div>
+                        <a href="#" class="footer__menu_item">главная</a>
+                        <a href="#partners" class="footer__menu_item">партнеры</a>
+                        <a href="pages/gallery.html" class="footer__menu_item">галерея</a>
+                        <a href="#services" class="footer__menu_item">Услуги</a>
+                        <a href="#about" class="footer__menu_item">о компании</a>
 
                     </div>
                 </div>
@@ -459,7 +442,6 @@
 
     <script src="js/imask.js"></script>
     <!-- <script src="js/mailer.js"></script> -->
-    <script type="text/javascript" src="js/instafeed.min.js"></script>
     <script src="js/script.js"></script>
     <script src="js/menuActions.js"></script>
 

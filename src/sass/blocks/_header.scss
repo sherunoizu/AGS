@@ -75,13 +75,13 @@
                     span {
                         margin-bottom: -4px;
                         &:nth-child(1) {
-                            transform: translate(1px, 8px) rotate(-45deg);
+                            transform: translate(0px, 8px) rotate(-45deg);
                         }
                         &:nth-child(2) {
                             display: none;
                         }
                         &:nth-child(3) {
-                            transform: translate(1px, -12px) rotate(45deg);
+                            transform: translate(0px, -12px) rotate(45deg);
                         }
                     }
                 }
