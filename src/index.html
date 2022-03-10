@@ -53,9 +53,7 @@
 
 
     <div class="overlay">
-        
         <div class="menu">
-            <div class="container">
                 <div class="menu__wrapper">
                     <ul class="menu__list">
                         <li class="menu__list_item">
@@ -70,10 +68,22 @@
                         <li class="menu__list_item">
                             <a href="#partners" class="menu__list_link">партнеры</a>
                         </li>
+                        
                     </ul>
-                    <button class="menu__button">Заказать звонок</button>
+                    <div class="menu__callback">
+                        <div class="menu__social">
+                            <label class="label_instagram" for="instagram">@ags_oz</label>
+                            <a href="https://www.instagram.com/ags_oz/" target="_blank" class="menu__social-item">
+                                <img src="icons/icons8-instagram.svg" alt="instagram" name="instagram">
+                            </a>
+
+                            <a href="#" target="_blank" class="menu__social-item">
+                                <img src="icons/icons8-whatsapp.svg" alt="whatsApp">
+                            </a>
+                        </div>
+                        <a href="#consultation-form"><button class="menu__button">Заказать звонок</button></a>
+                    </div>
                 </div>
-            </div>
         </div>
     </div>
     
@@ -220,8 +230,10 @@
             <div class="partners__wrapper">
                 <div class="partners__item">
                     <picture class="partners__item_logo">
-                        <img src="icons/partners/mjkhMo.png"
-                            alt="Министерство жилищно-коммунального хозяйства Московской области">
+                        <a href="https://mgkh.mosreg.ru/" target="_blank">
+                            <img src="icons/partners/mjkhMo.png"
+                                alt="Министерство жилищно-коммунального хозяйства Московской области">
+                        </a>
                     </picture>
                     <div class="partners__item_name">Министерство жилищно-коммунального хозяйства Московской области
                     </div>
@@ -229,7 +241,7 @@
                 <div class="partners__item">
                     <div class="partners__item_logo">
                         <picture>
-                            <img src="icons/partners/vodokanal.png" alt="Водоканалы Московской области">
+                                <img src="icons/partners/vodokanal.png" alt="Водоканалы Московской области">
                         </picture>
                     </div>
                     <div class="partners__item_name">Водоканалы Московской области
@@ -238,7 +250,9 @@
                 <div class="partners__item">
                     <div class="partners__item_logo">
                         <picture>
-                            <img src="icons/partners/region.png" alt="Министерство Регионального развития РФ">
+                            <a href="http://government.ru/department/57/events/" target="_blank">
+                                <img src="icons/partners/region.png" alt="Министерство Регионального развития РФ">
+                            </a>
                         </picture>
                     </div>
                     <div class="partners__item_name">Министерство Регионального развития РФ
@@ -378,6 +392,22 @@
     </section>
 
 
+    <div id="instafeed"></div>
+    
+
+    <script type="text/javascript">
+        var feed = new Instafeed({
+            get: 'user',
+            target: "instafeed-container",
+            resolution: 'low_resolution',
+            limit: 30,
+            accessToken:
+            'IGQVJYMUVsZAFEzMVptdFc1ejlpZAUZAOemNWN3VGU1JOSlROSDJhUmUyVzVGUEUtS3JJRURDYjk3eWRLOUlOOTBlM25Yclh0a3NZAQ29mWGtDZAXJRaV84OER0YjBDY1B6dHlDdGVvVlpTM1B4bGFfSU1GdgZDZD'
+        });
+        feed.run();
+    </script>
+
+
     <section class="footer">
         <div class="container">
             <div class="footer__wrapper">
@@ -429,7 +459,9 @@
 
     <script src="js/imask.js"></script>
     <!-- <script src="js/mailer.js"></script> -->
+    <script type="text/javascript" src="js/instafeed.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/menuActions.js"></script>
 
 
 </body>

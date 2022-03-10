@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Галерея</title>
 
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="../css/style.min.css">
 </head>
 <body>
     <header class="header">
         <div class="wrapper">
             <nav class="header__menu">
                 <a href="/" class="header__logo">
-                    <img src="icons/logo.png" alt="AGS">
+                    <img src="../icons/logo.png" alt="AGS">
                 </a>
                 <ul class="header__menu-list">
 
@@ -36,11 +36,11 @@
                 <div class="header__social hiding">
                     <label class="label_instagram" for="instagram">@ags_oz</label>
                     <a href="https://www.instagram.com/ags_oz/" target="_blank" class="header__social-item">
-                        <img src="icons/icons8-instagram.svg" alt="instagram" name="instagram">
+                        <img src="../icons/icons8-instagram.svg" alt="instagram" name="instagram">
                     </a>
 
                     <a href="#" target="_blank" class="header__social-item">
-                        <img src="icons/icons8-whatsapp.svg" alt="whatsApp">
+                        <img src="../icons/icons8-whatsapp.svg" alt="whatsApp">
                     </a>
                 </div>
                 <div class="header__phones">
@@ -50,5 +50,33 @@
             </div>
 
         </div>
+    </header>
+
+    <div class="overlay">
+
+        <div class="menu">
+            <div class="container">
+                <div class="menu__wrapper">
+                    <ul class="menu__list">
+                        <li class="menu__list_item">
+                            <a href="" class="menu__list_link">О компании</a>
+                        </li>
+                        <li class="menu__list_item">
+                            <a href="pages/gallery.html" class="menu__list_link">Галерея</a>
+                        </li>
+                        <li class="menu__list_item">
+                            <a href="" class="menu__list_link">Услуги</a>
+                        </li>
+                        <li class="menu__list_item">
+                            <a href="#partners" class="menu__list_link">партнеры</a>
+                        </li>
+                    </ul>
+                    <button class="menu__button">Заказать звонок</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/menuActions.js"></script>
 </body>
 </html>
