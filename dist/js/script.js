@@ -1,5 +1,3 @@
-// require('dotenv').config();
-
 const circle = document.querySelector(`.progress-ring__circle`);
 const radius = circle.r.baseVal.value;
 const circumference = 2 * Math.PI * radius;
@@ -11,8 +9,6 @@ function setProgress (percent) {
     const offset = circumference - percent / 100 * circumference;
     circle.style.strokeDashoffset = offset;
 }
-
-
 
 function changeProgress () {
     const btn = document.querySelector(`.play_btn`);
@@ -36,8 +32,6 @@ function changeProgress () {
     });
    
 }
-
-
 
 function showVideo () {
     const video = document.querySelector(`.companyVideo__video`);
@@ -68,12 +62,7 @@ function hideVideo () {
     }, 600);
 
     sectionContent.style.display = `flex`;
-    
-    
-    
 }
-
-
 
 changeProgress();
 
@@ -166,22 +155,9 @@ function flipCard() {
 }
 flipCard();
 
-// function toggleHeader(humburger) {
-//     const hidingElement = document.querySelectorAll(`.hiding`);
 
-//     if (humburger.classList.contains(`active`)) {
-//         for (let i = 0; i < hidingElement.length; i++) {
-//             // hidingElement[i].style.opacity = '0';
-//             hidingElement[i].style.opacity = '0';
-//         }
-//     } else {
-//         for (let i = 0; i < hidingElement.length; i++) {
-//             hidingElement[i].style.opacity = '1';
-//         }
-//     }
 
-    
-// }
+
 
 
 

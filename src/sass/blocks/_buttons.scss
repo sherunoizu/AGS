@@ -1,0 +1,41 @@
+.button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 15px;
+    width: 200px;
+    height: 40px;
+    border: 2px solid var(--social-color);
+    border-radius: 55px;
+    background: #fefefe;
+    color: var(--main-color);
+    font-weight: 600;
+    font-size: 19px;
+    transition: all .6s;
+
+    &:focus {
+        outline: none;
+    }
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
+    &__rent {
+        width: 300px;
+        border: 2px solid var(--main-color);
+        color: var(--main-color);
+        text-decoration: none;
+        &:hover {
+            transform: none;
+            background: var(--main-color);
+            color: #fff;
+        }
+    }
+}
+
+.a_btn {
+    display: block;
+    &:hover {
+        text-decoration: none;
+    }
+}
