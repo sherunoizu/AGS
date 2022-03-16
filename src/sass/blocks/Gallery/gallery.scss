@@ -1,0 +1,131 @@
+.gallery {
+    
+    padding-top: 70px;
+    &-item {
+        position: relative;
+        padding-top: 20px;
+        width: inherit;
+        &__wrapper {
+            width: inherit;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 15px;
+            &.hidden {
+                height: 10px;
+            }
+            .content {
+                position: relative;
+                transform: translateY(-100%);
+                transition: transform .4s;
+                &.active {
+                    transform: translateY(0);
+                }
+            }
+            
+        }
+        &__descr {
+            margin-top: 10px;
+            font-size: 17px;
+            color: #121212;
+            font-weight: 400;
+        }
+
+        &__date {
+            position: absolute;
+            left: -20%;
+            top: -7px;
+            &::after {
+                content: '';
+                width: 1368px;
+                height: 3px;
+                background-color: var(--second-color);
+                display: block;
+            }
+            .span {
+                cursor: pointer;
+                text-align: center;
+                width: 150px;
+                height: inherit;
+                display: block;
+                transition: all .3s;
+                &.active {
+                    background-color: var(--second-color);
+                    color: #fefefe;
+                    font-weight: 600;
+                    text-align: center;
+                    width: 150px;
+                    height: inherit;
+                    display: block;
+                }
+            }
+        }
+        &__slider {
+            
+            &_item {
+                width: 370px;
+                height: 360px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+        
+    }
+
+    .controls {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        height: 360px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        button {
+            border: none;
+            background-color: rgba(255, 255, 255, 0);
+            width: 40px;
+            height: 40px;
+            img {
+                width: 40px;
+                height: 40px;
+            }
+            &:focus {
+                outline: none;
+            }
+            &:hover {
+                border-radius: 100%;
+                background-color: rgba(255, 255, 255, 0.274);
+            }
+        }
+    }
+
+    .tns {
+        &-nav {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            button {
+                width: 12px;
+                height: 12px;
+                border: none;
+                border-radius: 100%;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            &-active {
+                background-color: var(--second-color);
+            }
+        }
+    }
+
+
+
+    
+}
