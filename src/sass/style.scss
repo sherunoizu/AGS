@@ -62,6 +62,7 @@
 
 
 @import 'blocks/animation';
+@import 'blocks/modal';
 @import 'blocks/title';
 @import 'blocks/buttons';
 @import 'blocks/header';
@@ -79,3 +80,6 @@
 @import 'blocks/services/servicesCatalog';
 @import 'blocks/gallery/galleryPromo';
 @import 'blocks/gallery/gallery';
+
+
+@import 'base/media';

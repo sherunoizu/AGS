@@ -1,0 +1,148 @@
+@media (max-width: 1420px) {
+    .header {
+        &__phones {
+            display: flex;
+            flex-direction: column;
+
+            &-item {
+                &:nth-child(2) {
+                    margin-left: 0;
+                    &::before {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .wrapper {
+            grid-template-columns: minmax(670px, 690px) auto;
+        }
+    }
+
+    .promo {
+        .container {
+            width: 960px;
+        }
+    }
+    
+}
+
+@media (max-width: 1200px ) {
+    .container {
+        min-width: 960px;
+    }
+    .header {
+        padding: 20px 15px 10px 15px;
+
+        &__phones {
+            flex-direction: row;
+
+            &-item {
+                &:nth-child(2) {
+                    margin-left: 20px;
+
+                    &::before {
+                         content: '';
+                         position: absolute;
+                         left: -10px;
+                         top: 50%;
+                         transform: translateY(-50%);
+                         display: block;
+                         width: 2px;
+                         height: 20px;
+                         background: var(--main-color-rgba);
+                    }
+                }
+            }
+        }
+        
+        &__menu {
+            display: block;
+            &-list {
+                display: none;
+            }
+        }
+
+        &__callback {
+            margin-left: 45px;
+        }
+
+        .wrapper {
+            display: flex;
+            justify-content: flex-start;
+            .humburger {
+                left: 95%;
+            }
+        }
+    }
+    
+}
+
+@media (max-width: 992px) {
+    .container {
+        min-width: 720px;
+    }
+
+    .header {
+        &__social {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        min-width: 540px;
+    }
+    .header {
+        &__phones {
+            flex-direction: column;
+            &-item {
+                &:nth-child(2) {
+                    margin-left: 0;
+
+                    &::before {
+                        display: none;
+                    }
+                }
+            }
+        }
+        .wrapper {
+            
+
+            .humburger {
+                left: 93%;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        min-width: 100%;
+        padding: 0 10px;
+    }
+    .header {
+        &__phones {
+            display: none;
+        }
+        .wrapper {
+            .humburger {
+                left: 85%;
+            }
+        }
+        &__logo {
+            img {
+                width: 150px;
+            }
+        }
+    }
+
+    .menu {
+        width: 100%;
+        height: calc(100% - 55px);
+        &__wrapper {
+            justify-content: space-around;
+        }
+    }
+}

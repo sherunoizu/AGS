@@ -100,42 +100,6 @@ function maskedInput() {
 
 maskedInput();
 
-// function mailer() {
-//     const nodemailer = require('nodemailer');
-
-//     console.log(process.env.EMAIL);
-
-//     const transporter = nodemailer.createTransport({
-//         service: 'gmail',
-//         auth: {
-//             user: process.env.EMAIL,
-//             pass: process.env.PASSWORD
-//         }
-//     });
-
-//     const mailOptions = {
-//         from: 'n79161418450@gmail.com',
-//         to: 'n79161418450@gmail.com',
-//         subject: 'Письмо отправленное через 1231234',
-//         text: 'Текст самого письма'
-//     };
-
-//     transporter.sendMail(mailOptions);
-// }
-
-// function sendForm() {
-//     const submitBtn = document.querySelector(`consultation-form__button`);
-//     submitBtn.addEventListener(`click`, (e) => {
-//         e.preventDefault();
-//         mailer();
-//     });
-// }
-
-// sendForm();
-
-
-
-
 function flipCard() {
     const flippingCard = document.querySelectorAll(`.flip-card`);
 
@@ -154,6 +118,17 @@ function flipCard() {
 
 }
 flipCard();
+
+function closeModal () {
+    const close = document.querySelector(`.modal__close`);
+    const overlay = document.querySelector(`.modal__overlay`);
+    close.addEventListener(`click`, () => {
+        overlay.classList.remove(`active`);
+    });
+}
+
+closeModal();
+
 
 
 

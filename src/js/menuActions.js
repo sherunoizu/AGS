@@ -11,8 +11,7 @@ function toggleHeader(humburger) {
             hidingElement[i].style.opacity = '1';
         }
     }
-
-    
+  
 }
 
 

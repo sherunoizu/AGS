@@ -1,6 +1,6 @@
 .gallery {
-    
-    padding-top: 70px;
+
+    padding-top: 40px;
     &-item {
         position: relative;
         padding-top: 20px;
@@ -36,7 +36,14 @@
             top: -7px;
             &::after {
                 content: '';
-                width: 1368px;
+                width: 1518px;
+                height: 3px;
+                background-color: var(--second-color);
+                display: block;
+            }
+            &::after {
+                content: '';
+                width: 1518px;
                 height: 3px;
                 background-color: var(--second-color);
                 display: block;
