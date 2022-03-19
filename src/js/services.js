@@ -75,9 +75,11 @@ function start (obj) {
                 items: 3,
             },
             577: {
+                preventScrollOnTouch: "force",
                 items: 2,
             },
             320: {
+                preventScrollOnTouch: "force",
                 nav: true,
                 items: 1
             }

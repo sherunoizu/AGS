@@ -1,3 +1,20 @@
+
+
+@media (max-width: 1700px) {
+    .gallery {
+        &-item {
+            &__date {
+                left: -10%;
+
+                &::after {
+                    width: 1290px;
+                }
+
+            }
+        }
+    }
+}
+
 @media (max-width: 1420px) {
     .header {
         &__phones {
@@ -56,6 +73,18 @@
                     width: 250px;
                     height: 250px;
                 }
+            }
+        }
+    }
+
+    .gallery {
+        &-item {
+            &__date {
+                left: 0%;
+                &::after {
+                    width: 1140px;
+                }
+                
             }
         }
     }
@@ -171,26 +200,26 @@
             width: 700px;
         }
 
-        // &__gallery {
-        //     grid-template-columns: repeat(auto-fit, 220px);
-
-        //     img {
-        //         width: 220px;
-        //         height: 220px;
-        //         &:hover {
-        //             transform: scale(1.1);
-        //         }
-        //         &:active {
-        //             transform: scale(1.1);
-        //         }
-        //     }
-        // }
+        
         .gallery__slider {
             &-item {
                 img {
                     width: 220px;
                     height: 220px;
                 }
+            }
+        }
+    }
+
+    .gallery {
+        &-item {
+            &__date {
+                left: 0%;
+
+                &::after {
+                    width: 960px;
+                }
+
             }
         }
     }
@@ -376,18 +405,33 @@
             &:hover {
                 border-left: solid 10px #fefefe;
             }
-
         }
-
-
     }
+
+    .gallery {
+        .controls {
+            display: flex;
+        }
+        &-item {
+            &__date {
+                &::after {
+                    width: 720px;
+                }
+
+            }
+        }
+    }
+
 }
 
 @media (max-width: 768px) {
     .container {
         width: 540px;
     }
+
     .header {
+        padding-top: 5px;
+        height: 80px;
         &__phones {
             flex-direction: column;
             &-item {
@@ -400,9 +444,16 @@
                 }
             }
         }
-        .wrapper {
-            
 
+        
+
+        &__logo {
+            img {
+                width: 150px;
+            }
+        }
+
+        .wrapper {
             .humburger {
                 left: 93%;
             }
@@ -410,7 +461,7 @@
     }
 
     .promo {
-        min-height: calc(100vh - 105px);
+        min-height: calc(100vh - 143px);
         background-position: 0 -77px;
         background-size: 143%;
         .container {
@@ -497,6 +548,13 @@
             margin-top: 0px;
             right: -80%;
             transform: translateY(-80%);
+            &-item {
+                img {
+                    &:hover {
+                        transform: scale(1);
+                    }
+                }
+            }
         }
         &__phones {
             margin-bottom: 46px;
@@ -505,6 +563,9 @@
             }
             &-item {
                 font-size: 17px;
+                &:hover {
+                        color: #fefefe;
+                }
             }
         }
         &__menu {
@@ -540,6 +601,45 @@
         .container {
             width: 540px;
         }
+
+        .button__rent {
+            &:hover {
+                color: var(--main-color);
+                background: #fefefe;
+            }
+        }
+
+        &__social {
+            &-item {
+                img {
+                    &:hover {
+                        transform: scale(1);
+                    }
+                }
+            }
+        }
+
+        .tech__tab {
+            width: 250px;
+            font-size: 16px;
+            &:hover {
+                box-shadow: unset;
+                border: solid 2px #d0d0d0;
+            }
+        }
+
+        .tech__item {
+            img {
+                &:hover {
+                    transform: scale(1);
+                }
+                &:active {
+                    transform: scale(1);
+                }
+            }
+        }
+
+        
         &__wrapper {
             display: block;
             width: inherit;
@@ -575,21 +675,46 @@
         }
 
         .gallery__slider {
-            // margin-left: 50px;
-            // width: 100%;
+            
             width: inherit;
 
             &-item {
                 width: inherit;
-
-                // width: 100%;
                 img {
                     width: 250px;
                     height: 250px;
                 }
             }
         }
-    
+    }
+
+    .gallery {
+        .controls {
+            display: none;
+        }
+        .title {
+            &_fz40 {
+                font-size: 30px;
+                margin-bottom: 20px;
+            }
+        }
+        &-item {
+            &__date {
+                &::after {
+                    width: 540px;
+                }
+
+            }
+            &__slider {
+                &_item {
+                   img {
+                       width: 540px;
+                       height: 540px;
+                       object-fit:fill;
+                   } 
+                }
+            }
+        }
     }
 }
 
@@ -880,6 +1005,40 @@
             width: 100%;
             padding: 0 10px;
         }
+
+        .title {
+            &_fz40 {
+                font-size: 32px;
+            }
+        }
+
+        &__social-item {
+            margin-bottom: 10px;
+        }
+
+        
+
+        .tech {
+            &__tabs {
+                flex-direction: column;
+            }
+            &__tab {
+                margin-bottom: 5px;
+            }
+        }
+
+        .rent__wrapper {
+            flex-direction: column;
+            h2 {
+                font-size: 19px;
+            }
+        }
+
+        .button__rent {
+            width: 250px;
+            font-size: 15px;
+        }
+
         &__wrapper {
             display: block;
             width: inherit;
@@ -899,8 +1058,7 @@
         }
 
         .gallery__slider {
-            // margin-left: 50px;
-            // width: 100%;
+            
             width: inherit;
 
             &-item {
@@ -912,6 +1070,28 @@
                 }
             }
         }
+    }
 
+    .gallery {
+        padding-top: 20px;
+        &-item {
+            &__date {
+                width: inherit;
+                &::after {
+                    width: inherit;
+                }
+
+            }
+
+            &__slider {
+                &_item {
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit:fill
+                    }
+                }
+            }
+        }
     }
 }

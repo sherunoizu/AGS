@@ -52,7 +52,26 @@ function start (obj) {
         autoplay: false,
         loop: false,
         responsive: {
-
+            993: {
+                items: 3,
+                nav: false,
+            },
+            769: {
+                items: 2,
+                nav: true,
+                slideBy: 'page'
+            },
+            577: {
+                items: 1,
+                nav: true,
+                slideBy: 'page'
+            },
+            320: {
+                preventScrollOnTouch: "force",
+                items: 1,
+                nav: true,
+                slideBy: 'page'
+            }
         }
     });
     

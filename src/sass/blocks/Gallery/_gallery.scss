@@ -40,14 +40,9 @@
                 height: 3px;
                 background-color: var(--second-color);
                 display: block;
+                border-radius: 15px;
             }
-            &::after {
-                content: '';
-                width: 1518px;
-                height: 3px;
-                background-color: var(--second-color);
-                display: block;
-            }
+            
             .span {
                 cursor: pointer;
                 text-align: center;
