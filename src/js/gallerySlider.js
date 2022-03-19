@@ -3,6 +3,7 @@ function showContent () {
     const datesSpan = document.querySelectorAll(`.span`);
     const contents = document.querySelectorAll(`.content`);
     const wrappers = document.querySelectorAll(`.gallery-item__wrapper`);
+    
     for (let i = 0; i < dates.length; i++) {
         dates[i].addEventListener(`click`, () => {
             datesSpan[i].classList.toggle(`active`);

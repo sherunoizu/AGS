@@ -1,11 +1,21 @@
 .promo {
     padding-top: 60px;
-
+    position: relative;;
     min-height: 650px;
     background:url(../img/bg2.jpeg) center (center/cover) no-repeat;
     object-fit: cover;
     .container {
         width: 1300px;
+    }
+
+    .test {
+        padding-top: 60px;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        min-height: inherit;
+        background-color: #3b3b3b5d;
+        z-index: 100;
     }
     
     &__subtitle {

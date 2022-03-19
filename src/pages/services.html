@@ -6,12 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Услуги компании "АльфаГидроСтрой"</title>
 
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
     <link rel="stylesheet" href="../css/style.min.css">
+    
 </head>
 <body class="body">
 
     <header class="header">
         <div class="wrapper">
+            <button class="humburger">
+                <span></span><span></span><span></span>
+            </button>
             <nav class="header__menu">
                 <a href="/" class="header__logo">
                     <img src="../icons/logo.png" alt="AGS">
@@ -19,9 +25,7 @@
                 <ul class="header__menu-list">
 
                     <li class="header__menu-item"><a class="hiding" href="../index.html">главная</a>
-                        <button class="humburger">
-                            <span></span><span></span><span></span>
-                        </button>
+                        
                     </li>
                     <li class="header__menu-item">
                         <a class="hiding" href="../index.html#services">услуги</a>
@@ -106,6 +110,10 @@
             <h2 class="title title_fz40">Каталог услуг</h2>
             <a class="a_btn" href="../index.html#consultation"><button class="button button__rent">Заказать расчет стоимости</button></a>
             <div class="servicesCatalog__wrapper">
+                <div class="servicesCatalog__submenu_header">
+                    <div class="submenu__text">меню</div>
+                    <div class="submenu__close">&times;</div>
+                </div>
                 <ul class="servicesCatalog__tabs">
                     <li class="servicesCatalog__tab active">
                         <div>Прокладка инженерных сетей</div>
@@ -152,11 +160,18 @@
 
                 <div class="servicesCatalog__layout">
                     <div id="0" class="servicesCatalog__item active">
-                        <picture class="servicesCatalog__gallery">
-                            <img src="../img/ServicesSection/service1/1.jpg" alt="">
-                            <img src="../img/ServicesSection/service1/2.jpg" alt="">
-                            <img src="../img/ServicesSection/service1/3.jpg" alt="">
-                        </picture>
+                        
+                        <div id="slider_0" class="gallery__slider">
+                            <div class="gallery__slider-item">
+                                <img src="../img/ServicesSection/service1/1.jpg" alt="">
+                            </div>
+                            <div class="gallery__slider-item">
+                                <img src="../img/ServicesSection/service1/2.jpg" alt="">
+                            </div>
+                            <div class="gallery__slider-item">
+                                <img src="../img/ServicesSection/service1/3.jpg" alt="">
+                            </div>
+                        </div>
 
                         <div class="servicesCatalog__description">
                             <p>Устройство и прокладка инженерных сетей — важный этап строительства любого объекта,
@@ -216,11 +231,18 @@
                     </div>
 
                     <div id="1" class="servicesCatalog__item">
-                        <picture class="servicesCatalog__gallery">
-                            <img src="../img/ServicesSection/service2/1.jpg" alt="">
-                            <img src="../img/ServicesSection/service2/2.jpg" alt="">
-                            <img src="../img/ServicesSection/service2/3.jpg" alt="">
-                        </picture>
+                        
+                        <div id="slider_1"  class="gallery__slider">
+                            <div class="gallery__slider-item">
+                                <img src="../img/ServicesSection/service2/1.jpg" alt="">
+                            </div>
+                            <div class="gallery__slider-item">
+                                <img src="../img/ServicesSection/service2/2.jpg" alt="">
+                            </div>
+                            <div class="gallery__slider-item">
+                                <img src="../img/ServicesSection/service2/3.jpg" alt="">
+                            </div>
+                        </div>
 
                         <div class="servicesCatalog__description">
                             <p>Наша компания производит полный комплекс работ по обслуживанию инженерных сетей.</p>
@@ -359,11 +381,18 @@
                     </div>
 
                     <div id="2" class="servicesCatalog__item">
-                        <picture class="servicesCatalog__gallery">
-                            <img src="../img/ServicesSection/service3/1.jpg" alt="">
-                            <img src="../img/ServicesSection/service3/2.jpg" alt="">
-                            <img src="../img/ServicesSection/service3/3.jpg" alt="">
-                        </picture>
+
+                        <div id="slider_2" class="gallery__slider">
+                            <div class="gallery__slider-item">
+                                <img src="../img/ServicesSection/service3/1.jpg" alt="">
+                            </div>
+                            <div class="gallery__slider-item">
+                                <img src="../img/ServicesSection/service3/2.jpg" alt="">
+                            </div>
+                            <div class="gallery__slider-item">
+                                <img src="../img/ServicesSection/service3/3.jpg" alt="">
+                            </div>
+                        </div>
 
                         <div class="servicesCatalog__description">
 
@@ -536,11 +565,18 @@
                     </div>
 
                     <div id="3" class="servicesCatalog__item">
-                        <picture class="servicesCatalog__gallery">
-                            <img src="../img/ServicesSection/service4/1.jpg" alt="">
-                            <img src="../img/ServicesSection/service4/2.jpg" alt="">
-                            <img src="../img/ServicesSection/service4/3.jpg" alt="">
-                        </picture>
+
+                        <div id="slider_3" class="gallery__slider">
+                            <div class="gallery__slider-item">
+                                <img src="../img/ServicesSection/service4/1.jpg" alt="">
+                            </div>
+                            <div class="gallery__slider-item">
+                                <img src="../img/ServicesSection/service4/2.jpg" alt="">
+                            </div>
+                            <div class="gallery__slider-item">
+                                <img src="../img/ServicesSection/service4/3.jpg" alt="">
+                            </div>
+                        </div>
 
                         <div class="servicesCatalog__description">
                             
@@ -631,11 +667,18 @@
                     </div>
 
                     <div id="4" class="servicesCatalog__item">
-                        <picture class="servicesCatalog__gallery">
-                            <img src="../img/ServicesSection/service5/1.jpg" alt="">
-                            <img src="../img/ServicesSection/service5/2.jpg" alt="">
-                            <img src="../img/ServicesSection/service5/3.jpg" alt="">
-                        </picture>
+
+                        <div id="slider_4" class="gallery__slider">
+                            <div class="gallery__slider-item">
+                                <img src="../img/ServicesSection/service5/1.jpg" alt="">
+                            </div>
+                            <div class="gallery__slider-item">
+                                <img src="../img/ServicesSection/service5/2.jpg" alt="">
+                            </div>
+                            <div class="gallery__slider-item">
+                                <img src="../img/ServicesSection/service5/3.jpg" alt="">
+                            </div>
+                        </div>
 
                         <div class="servicesCatalog__description">
                             <ul>
@@ -702,11 +745,18 @@
                     </div>
 
                     <div id="5" class="servicesCatalog__item">
-                        <picture class="servicesCatalog__gallery">
-                            <img src="../img/ServicesSection/service6/1.jpg" alt="">
-                            <img src="../img/ServicesSection/service6/2.jpg" alt="">
-                            <img src="../img/ServicesSection/service6/3.jpg" alt="">
-                        </picture>
+
+                        <div id="slider_5" class="gallery__slider">
+                            <div class="gallery__slider-item">
+                                <img src="../img/ServicesSection/service6/1.jpg" alt="">
+                            </div>
+                            <div class="gallery__slider-item">
+                                <img src="../img/ServicesSection/service6/2.jpg" alt="">
+                            </div>
+                            <div class="gallery__slider-item">
+                                <img src="../img/ServicesSection/service6/3.jpg" alt="">
+                            </div>
+                        </div>
 
                         <div class="servicesCatalog__description">
                             <p>Шнековое бурение применяется при строительстве практически любых объектов. Климатические
@@ -775,11 +825,18 @@
                     </div>
 
                     <div id="6" class="servicesCatalog__item">
-                        <picture class="servicesCatalog__gallery">
-                            <img src="../img/ServicesSection/service7/1.jpg" alt="">
-                            <img src="../img/ServicesSection/service7/2.jpg" alt="">
-                            <img src="../img/ServicesSection/service7/3.jpg" alt="">
-                        </picture>
+
+                        <div id="slider_6" class="gallery__slider">
+                            <div class="gallery__slider-item">
+                                <img src="../img/ServicesSection/service7/1.jpg" alt="">
+                            </div>
+                            <div class="gallery__slider-item">
+                                <img src="../img/ServicesSection/service7/2.jpg" alt="">
+                            </div>
+                            <div class="gallery__slider-item">
+                                <img src="../img/ServicesSection/service7/3.jpg" alt="">
+                            </div>
+                        </div>
 
                         <div class="servicesCatalog__description">
                             
@@ -837,11 +894,18 @@
                     </div>
 
                     <div id="7" class="servicesCatalog__item">
-                        <picture class="servicesCatalog__gallery">
-                            <img src="../img/ServicesSection/service8/1.jpg" alt="">
-                            <img src="../img/ServicesSection/service8/2.jpg" alt="">
-                            <img src="../img/ServicesSection/service8/3.jpg" alt="">
-                        </picture>
+
+                        <div id="slider_7" class="gallery__slider">
+                            <div class="gallery__slider-item">
+                                <img src="../img/ServicesSection/service8/1.jpg" alt="">
+                            </div>
+                            <div class="gallery__slider-item">
+                                <img src="../img/ServicesSection/service8/2.jpg" alt="">
+                            </div>
+                            <div class="gallery__slider-item">
+                                <img src="../img/ServicesSection/service8/3.jpg" alt="">
+                            </div>
+                        </div>
 
                         <div class="servicesCatalog__description">
 
@@ -900,11 +964,18 @@
                     </div>
 
                     <div id="8" class="servicesCatalog__item">
-                        <picture class="servicesCatalog__gallery">
-                            <img src="../img/ServicesSection/service9/1.jpg" alt="">
-                            <img src="../img/ServicesSection/service9/2.jpg" alt="">
-                            <img src="../img/ServicesSection/service9/3.jpg" alt="">
-                        </picture>
+
+                        <div id="slider_8" class="gallery__slider">
+                            <div class="gallery__slider-item">
+                                <img src="../img/ServicesSection/service9/1.jpg" alt="">
+                            </div>
+                            <div class="gallery__slider-item">
+                                <img src="../img/ServicesSection/service9/2.jpg" alt="">
+                            </div>
+                            <div class="gallery__slider-item">
+                                <img src="../img/ServicesSection/service9/3.jpg" alt="">
+                            </div>
+                        </div>
 
                         <div class="servicesCatalog__description">
 
@@ -946,11 +1017,18 @@
                     </div>
 
                     <div id="9" class="servicesCatalog__item">
-                        <picture class="servicesCatalog__gallery">
-                            <img src="../img/ServicesSection/service10/1.jpg" alt="">
-                            <img src="../img/ServicesSection/service10/2.jpg" alt="">
-                            <img src="../img/ServicesSection/service10/3.jpg" alt="">
-                        </picture>
+                        
+                        <div id="slider_9" class="gallery__slider">
+                            <div class="gallery__slider-item">
+                                <img src="../img/ServicesSection/service10/1.jpg" alt="">
+                            </div>
+                            <div class="gallery__slider-item">
+                                <img src="../img/ServicesSection/service10/2.jpg" alt="">
+                            </div>
+                            <div class="gallery__slider-item">
+                                <img src="../img/ServicesSection/service10/3.jpg" alt="">
+                            </div>
+                        </div>
 
                         <div class="servicesCatalog__description">
 
@@ -1036,11 +1114,18 @@
                     </div>
 
                     <div id="10" class="servicesCatalog__item">
-                        <picture class="servicesCatalog__gallery">
-                            <img src="../img/ServicesSection/service11/1.jpg" alt="">
-                            <img src="../img/ServicesSection/service11/2.jpg" alt="">
-                            <img src="../img/ServicesSection/service11/3.jpg" alt="">
-                        </picture>
+
+                        <div id="slider_10" class="gallery__slider">
+                            <div class="gallery__slider-item">
+                                <img src="../img/ServicesSection/service11/1.jpg" alt="">
+                            </div>
+                            <div class="gallery__slider-item">
+                                <img src="../img/ServicesSection/service11/2.jpg" alt="">
+                            </div>
+                            <div class="gallery__slider-item">
+                                <img src="../img/ServicesSection/service11/3.jpg" alt="">
+                            </div>
+                        </div>
 
                         <div class="servicesCatalog__description">
 
@@ -1098,11 +1183,18 @@
                     </div>
 
                     <div id="11" class="servicesCatalog__item">
-                        <picture class="servicesCatalog__gallery">
-                            <img src="../img/ServicesSection/service12/1.jpg" alt="">
-                            <img src="../img/ServicesSection/service12/2.jpg" alt="">
-                            <img src="../img/ServicesSection/service12/3.jpg" alt="">
-                        </picture>
+
+                        <div id="slider_11" class="gallery__slider">
+                            <div class="gallery__slider-item">
+                                <img src="../img/ServicesSection/service12/1.jpg" alt="">
+                            </div>
+                            <div class="gallery__slider-item">
+                                <img src="../img/ServicesSection/service12/2.jpg" alt="">
+                            </div>
+                            <div class="gallery__slider-item">
+                                <img src="../img/ServicesSection/service12/3.jpg" alt="">
+                            </div>
+                        </div>
 
                         <div class="servicesCatalog__description">
 
@@ -1254,11 +1346,17 @@
                                 <div class="tech__item active">
                                     <div class="tech__item_title">Аренда экскаватора-погрузчика Komatsu</div>
 
-                                    <picture class="servicesCatalog__gallery">
-                                        <img src="../img/ServicesSection/service13/komatsu1.jpg" alt="komatsu">
-                                        <img src="../img/ServicesSection/service13/komatsu1.jpg" alt="komatsu">
-                                        <img src="../img/ServicesSection/service13/komatsu1.jpg" alt="komatsu">
-                                    </picture>
+                                    <div id="slider_12" class="gallery__slider">
+                                        <div class="gallery__slider-item">
+                                            <img src="../img/ServicesSection/service13/komatsu1.jpg" alt="komatsu">
+                                        </div>
+                                        <div class="gallery__slider-item">
+                                            <img src="../img/ServicesSection/service13/komatsu1.jpg" alt="komatsu">
+                                        </div>
+                                        <div class="gallery__slider-item">
+                                            <img src="../img/ServicesSection/service13/komatsu1.jpg" alt="komatsu">
+                                        </div>
+                                    </div>
 
                                     <div class="tech__item_descr">
                                         <p>
@@ -1300,14 +1398,20 @@
                                     </div>
                                 </div>
 
-                                <div class="tech__item">
+                                <div id="hitachiSlider" class="tech__item">
                                     <div class="tech__item_title">Аренда экскаватора Hitachi ZX180LCN-5G</div>
 
-                                    <picture class="servicesCatalog__gallery">
-                                        <img src="../img/ServicesSection/service13/hitachi_1.jpg" alt="hitachi">
-                                        <img src="../img/ServicesSection/service13/hitachi_1.jpg" alt="hitachi">
-                                        <img src="../img/ServicesSection/service13/hitachi_1.jpg" alt="hitachi">
-                                    </picture>
+                                    <div id="slider_13" class="gallery__slider">
+                                        <div class="gallery__slider-item">
+                                            <img src="../img/ServicesSection/service13/hitachi_1.jpg" alt="hitachi">
+                                        </div>
+                                        <div class="gallery__slider-item">
+                                            <img src="../img/ServicesSection/service13/hitachi_1.jpg" alt="hitachi">
+                                        </div>
+                                        <div class="gallery__slider-item">
+                                            <img src="../img/ServicesSection/service13/hitachi_1.jpg" alt="hitachi">
+                                        </div>
+                                    </div>
 
                                     <div class="tech__item_descr">
                                         <p>
@@ -1374,7 +1478,7 @@
             
     </section>
 
-    <section class="footer">
+    <!-- <section class="footer">
         <div class="container">
             <div class="footer__wrapper">
                 <div class="footer__left-half">
@@ -1419,10 +1523,10 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
 
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="../js/menuActions.js"></script>
     <script src="../js/services.js"></script>
     

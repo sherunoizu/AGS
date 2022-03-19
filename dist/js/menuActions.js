@@ -1,3 +1,5 @@
+
+
 function toggleHeader(humburger) {
     const hidingElement = document.querySelectorAll(`.hiding`);
 
@@ -37,3 +39,27 @@ function menu() {
 }
 
 menu();
+
+function submenu () {
+    const btn = document.querySelector(`.servicesCatalog__submenu_header`);
+    const list = document.querySelector(`.servicesCatalog__tabs`);
+    const listItems = document.querySelectorAll(`.servicesCatalog__tabs`);
+    const close = document.querySelector(`.submenu__close`);
+
+    btn.addEventListener(`click`, () => {
+        list.classList.toggle(`active`);
+        close.classList.toggle(`active`);
+    });
+
+    for (let i = 0; i < listItems.length; i++) {
+        
+        listItems[i].addEventListener(`click`, () => {
+            setTimeout( ()=>{
+                list.classList.remove(`active`);
+                close.classList.remove(`active`);
+            }, 150);      
+        });
+    }
+}
+
+submenu();
