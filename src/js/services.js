@@ -58,7 +58,6 @@ function start (obj) {
     
     var slider = tns({
         container: `#${id}`,
-        // container: ".gallery__slider",
         items: 3,
         slideBy: '1',
         autoplay: true,
@@ -66,8 +65,7 @@ function start (obj) {
         nav: false,
         controls: false,
         navPosition: 'bottom',
-        // autoWidth: true,
-        // center: true,
+        
         loop: true,
         
         responsive: {
@@ -86,19 +84,5 @@ function start (obj) {
         }
     });
 
-    // console.log(slider);
-    
-
-    // if (itemsLenght > 3) {
-    //     obj.querySelector('.prev').addEventListener('click', function () {
-    //         slider.goTo('prev');
-    //     });
-    //     obj.querySelector('.next').addEventListener('click', function () {
-    //         slider.goTo('next');
-    //     });
-    // } else {
-    //     obj.querySelector(`.prev`).style.display = `none`;
-    //     obj.querySelector(`.next`).style.display = `none`;
-    // }
 
 }

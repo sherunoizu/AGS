@@ -43,6 +43,8 @@ function start (obj) {
     var slider = tns({
         container: `#${id}`,
         items: 3,
+        animateIn: "jello",
+        swipeAngle: false,
         gutter: '15',
         slideBy: '1',
         controls: false,
@@ -59,18 +61,15 @@ function start (obj) {
             769: {
                 items: 2,
                 nav: true,
-                slideBy: 'page'
             },
             577: {
                 items: 1,
                 nav: true,
-                slideBy: 'page'
             },
             320: {
                 preventScrollOnTouch: "force",
                 items: 1,
                 nav: true,
-                slideBy: 'page'
             }
         }
     });

@@ -1,4 +1,5 @@
 .promo {
+    overflow: hidden;
     padding-top: 60px;
     position: relative;;
     min-height: 650px;
@@ -11,9 +12,10 @@
     .test {
         padding-top: 60px;
         position: absolute;
-        top: 0;
+        top: -25px;
         width: 100%;
-        min-height: inherit;
+        min-height: 500px;
+        max-height: 500px;
         background-color: #3b3b3b5d;
         z-index: 100;
     }

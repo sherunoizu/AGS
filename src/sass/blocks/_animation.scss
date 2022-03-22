@@ -1,13 +1,13 @@
-@keyframes read-more {
+@keyframes info {
     from {
-        transform: translateY(0) translateX(-50%);
+        transform: scale(1);
     }
 
     50% {
-        transform: translateY(10px) translateX(-50%);
+        transform: scale(1.1);
     }
 
     to {
-        transform: translateY(0) translateX(-50%);
+        transform: scale(1);
     }
 }

@@ -1,7 +1,7 @@
 .privileges {
     padding-top: 70px;
     padding-bottom: 50px;
-    min-height: calc(100vh - 105px);
+    min-height: calc(100% - 105px);
     &__wrapper {
         padding: 70px 20px 0 20px;
         display: grid;
@@ -14,6 +14,11 @@
         grid-template-rows:70px 54px auto;
         max-width: 300px;
         row-gap: 20px;
+        &:nth-child(3) {
+            .privileges__icon {
+                transform: scale(1.4);
+            }
+        }
         
     }
     &__icon {
@@ -21,9 +26,7 @@
         margin: 0 auto;
         width: 70px;
         height: 70px;
-        &:nth-child(3) {
-            transform: scale(1.3);
-        }
+        
     }
     
     &__subtitle {

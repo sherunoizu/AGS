@@ -129,6 +129,97 @@ function closeModal () {
 
 closeModal();
 
+function gallery () {
+    const sliders = document.querySelectorAll(`.smallGallery__wrapper`);
+    
+    for (let i = 0; i < sliders.length; i++) {
+        
+        initSmallGallerySlider(sliders[i]);
+    }
+}
+
+gallery();
+
+
+function initSmallGallerySlider (obj) {
+    const objSlider = obj.querySelector(`.slider`);
+    const id = objSlider.id;
+
+    var slider = tns({
+        container: `#${id}`,
+        items: 1,
+        swipeAngle: false,
+        slideBy: '1',
+        controls: false,
+        nav: false,
+        navPosition: `bottom`,
+        arrowKeys: true,
+        autoplay: false,
+        loop: false,
+        touch: false,
+        responsive: {
+            993: {
+               
+            },
+            769: {
+                // nav: false,
+            },
+            577: {
+                preventScrollOnTouch: "force",
+                // nav: true
+            },
+            320: {
+                
+            }
+        }
+    });
+
+    const sld = obj.querySelectorAll(`.tns-item`);
+    const prev = obj.querySelector('.prev');
+    const next = obj.querySelector('.next');
+
+    if (sld[0].classList.contains(`tns-slide-active`)) {
+        prev.classList.add(`disabled`);
+        next.classList.add(`active`);
+    }
+   
+    prev.addEventListener('click', function () {
+        slider.goTo('prev');
+        if (sld[0].classList.contains(`tns-slide-active`)) {
+            prev.classList.add(`disabled`);
+            next.classList.add(`active`);
+        }
+        next.classList.remove(`disabled`);
+        next.classList.add(`active`);
+    });
+    next.addEventListener('click', function () {
+        slider.goTo('next');
+        if (sld[sld.length -1].classList.contains(`tns-slide-active`)){
+            next.classList.remove(`active`);
+            prev.classList.add(`disabled`);
+        }
+        prev.classList.remove(`disabled`);
+        prev.classList.add(`active`);
+    });
+
+}
+
+
+function openInfo () {
+    const info = document.querySelectorAll(`.info`);
+    const photoHover = document.querySelectorAll(`.smallGallery__photo-hover`);
+
+    
+
+    for (let i = 0; i < info.length; i++) {
+        info[i].addEventListener(`click`, () => {
+            photoHover[i].classList.toggle(`active`);
+        });
+    }
+}
+
+openInfo();
+
 
 
 
