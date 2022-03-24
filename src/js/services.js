@@ -51,7 +51,6 @@ function gallery () {
 gallery();
 
 function start (obj) {
-    console.log(obj);
     const objSlider = obj.querySelector(`.gallery__slider`);
     const id = objSlider.id;
 

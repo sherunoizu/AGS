@@ -40,21 +40,41 @@ function menu() {
 
 menu();
 
+// function changeTitle (obj) {
+//     const sectionName = document.querySelector(`.serviceCatalog__sectionName`);
+//     const txt = obj.querySelector(`div`).textContent;
+//     sectionName.innerText = txt;
+//     return;
+// }
+
 function submenu () {
-    const btn = document.querySelector(`.servicesCatalog__submenu_header`);
+    // const btn = document.querySelector(`.servicesCatalog__submenu_header`);
+    const menuHeader = document.querySelector(`.servicesCatalog__submenu_header`);
+    const  btn = document.querySelector(`.downArrow`);
     const list = document.querySelector(`.servicesCatalog__tabs`);
-    const listItems = document.querySelectorAll(`.servicesCatalog__tabs`);
+    const listItems = document.querySelectorAll(`.servicesCatalog__tab`);
     const close = document.querySelector(`.submenu__close`);
+    
 
     btn.addEventListener(`click`, () => {
+        menuHeader.classList.toggle(`active`);
         list.classList.toggle(`active`);
         close.classList.toggle(`active`);
+    });
+
+    close.addEventListener(`click`, () => {
+        menuHeader.classList.remove(`active`);
+        list.classList.remove(`active`);
+        close.classList.remove(`active`);
+         
     });
 
     for (let i = 0; i < listItems.length; i++) {
         
         listItems[i].addEventListener(`click`, () => {
+            // changeTitle(listItems[i]);
             setTimeout( ()=>{
+                menuHeader.classList.remove(`active`);
                 list.classList.remove(`active`);
                 close.classList.remove(`active`);
             }, 150);      

@@ -14,8 +14,7 @@
         position: absolute;
         top: -25px;
         width: 100%;
-        min-height: 500px;
-        max-height: 500px;
+        min-height: calc(100% + 25px);
         background-color: #3b3b3b5d;
         z-index: 100;
     }

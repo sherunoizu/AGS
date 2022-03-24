@@ -11,3 +11,17 @@
         transform: scale(1);
     }
 }
+
+@keyframes read-more {
+    from {
+        transform: translateY(0) translateX(-50%);
+    }
+
+    50% {
+        transform: translateY(10px) translateX(-50%);
+    }
+
+    to {
+        transform: translateY(0) translateX(-50%);
+    }
+}
