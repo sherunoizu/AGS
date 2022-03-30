@@ -1,0 +1,90 @@
+.vacanciesPromo {
+    padding-top: 30px;
+    &__wrapper {
+        margin-top: 30px;
+        padding: 40px 30px;
+        display: grid;
+        grid-template-columns: 500px 200px 380px;
+    }
+    &__text {
+        padding-right: 40px;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 20px;
+        color: #6d6d6d;
+    }
+    &__feedback {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        justify-self: center;
+        color: #6d6d6d;
+        font-size: 15px;
+    }
+    &__phones {
+        display: flex;
+        flex-direction: column;
+        &-title {font-weight: 700;}
+        &-item {
+            margin-top: 15px;
+            letter-spacing: .65px;
+            font-family: "IBM Plex Sans",sans-serif;
+            color: var(--main-color);
+        }
+    }
+    &__email {
+        display: flex;
+        flex-direction: column;
+        &-title {
+            font-weight: 700;
+        }
+        &-item {
+            margin-top: 15px;
+            letter-spacing: .65px;
+            font-family: "IBM Plex Sans", sans-serif;
+            color: var(--main-color);
+        }
+    }
+
+    &__resume {
+        justify-self: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        a {
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+    &__info {
+        text-align: center;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 20px;
+        color: #6d6d6d;
+    }
+    &__button {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 15px;
+        width: 300px;
+        height: 40px;
+        border: 2px solid var(--main-color);
+        background: #fff;
+        color: var(--main-color);
+        font-weight: 600;
+        font-size: 15px;
+        transition: all .6s;
+        &:hover {
+            background: var(--main-color);
+            color: #fff;
+        }
+    }
+    hr {
+        background-color: var(--main-color);
+        height: 2px;
+        border: none;
+        border-radius: 15px;
+    }
+}

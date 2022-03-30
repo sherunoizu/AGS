@@ -92,7 +92,7 @@
             width: 200px;
             height: 40px;
             border: 2px solid var(--social-color);
-            border-radius: 55px;
+            // border-radius: 55px;
             background: #fefefe;
             color: var(--main-color);
             font-weight: 600;
@@ -103,7 +103,6 @@
                 outline: none;
             }
             &:hover {
-                // box-shadow: 2px 2px 20px var(--subtext-background);
                 transform: scale(1.1);
             }
         }

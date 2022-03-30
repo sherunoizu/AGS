@@ -1,0 +1,97 @@
+.vacancies {
+    padding-top: 30px;
+    padding-bottom: 70px;
+    &__title {
+        color: #121212;
+        font-size: 25px;
+        margin-bottom: 0;
+    }
+    &__wrapper {
+        margin-top: 30px;
+        border: 2px solid #d6d6d6;
+        border-bottom: none;
+    }
+    &__block {
+        border-bottom:2px solid #d6d6d6;
+        overflow: hidden;
+        transition: all .6s;
+        
+        &.active {
+            background-color: #e7e7e7;
+            .vacancies__block-visible{
+                background-color: #e7e7e7;
+            }
+            .vacancies__block_downArrow {
+                transform: rotateX(180deg);
+            }
+
+            .vacancies__block_content {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        
+        &-visible {
+            background-color: #fefefe;
+            padding: 10px 50px;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            transition: all .6s;
+            
+        }
+        &_name {
+            margin-right: 15px;
+            color: var(--main-color);
+            font-size: 20px;
+            line-height: 35px;
+            font-weight: 600;
+        }
+        &_pay {
+            font-size: 15px;
+            line-height: 35px;
+            margin-right: 50px;
+        }
+        &_downArrow {
+            transition: all .6s;
+            cursor: pointer;
+            width: 25px;
+            height: 25px;
+            
+        }
+        
+        &_content {
+            padding: 10px 50px;
+            display: none;
+            // transform: translateY(-10%);
+            a {
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    &__button {
+        display: block;
+        margin-top: 35px;
+        width: 250px;
+        height: 40px;
+        border: 2px solid var(--main-color);
+        // border-radius: 55px;
+        background: #fff;
+        color: var(--main-color);
+        font-weight: 600;
+        font-size: 15px;
+        transition: all .6s;
+
+        &:hover {
+            background: var(--main-color);
+            color: #fff;
+        }
+    }
+
+
+
+
+    
+}
