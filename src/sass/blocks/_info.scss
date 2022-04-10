@@ -1,0 +1,62 @@
+.info {
+    &__overlay {
+        z-index: 100;
+        display: none;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.56);
+        &.active {
+            display: block;
+        }
+    }
+    &__modal {
+        
+        overflow-y: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgb(242, 242, 242);
+        width: 90%;
+        height: 70vh;
+        padding: 38px 40px 40px 40px;
+        
+    }
+    &__close {
+            position: absolute;
+            font-size: 41px;
+            color: var(--main-color);
+            line-height: 20px;
+            cursor: pointer;
+            transform: scale(1.3);
+            top: 7px;
+            right: 7px;
+        }
+    &__content {
+        display: none;
+        &.active {
+            display: block;
+        }
+    }
+    &__title {
+        font-size: 21px;
+        text-align: center;
+    }
+    &__descr {
+        
+        &_1 {
+            height: 1200px;
+            background-color: red;
+        }
+        &_2 {
+            height: 1200px;
+            background-color: green;
+        }
+        &_3 {
+            height: 1200px;
+            background-color: blue;
+        }
+    }
+}

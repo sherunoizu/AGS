@@ -1,3 +1,4 @@
+
 const circle = document.querySelector(`.progress-ring__circle`);
 const radius = circle.r.baseVal.value;
 const circumference = 2 * Math.PI * radius;
@@ -219,6 +220,29 @@ function openInfo () {
 }
 
 openInfo();
+
+function showMoreInfo () {
+    const infoOverlay = document.querySelector(`.info__overlay`);
+    const moreButtons = document.querySelectorAll(`.services__more`);
+    const infoContent = document.querySelectorAll(`.info__content`);
+    const infoClose = document.querySelector(`.info__close`);
+
+    for (let i = 0; i < moreButtons.length; i++) {
+            moreButtons[i].addEventListener(`click`, () => {
+            infoOverlay.classList.add(`active`);
+            infoContent[i].classList.add(`active`);
+            
+            infoClose.addEventListener(`click`, () => {
+                infoOverlay.classList.remove(`active`);
+                infoContent[i].classList.remove(`active`);
+            });
+        });
+    }
+
+    
+}
+
+showMoreInfo();
 
 
 

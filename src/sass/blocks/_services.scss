@@ -42,6 +42,9 @@
         
         &_picture {
             img {
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
                 border-radius: 15px;
                 filter: brightness(50%);
                 transition: all .6s;
@@ -54,10 +57,17 @@
        color: #fefefe;
        font-size: 17px;
        font-weight: 500;
+       ul {
+           margin-top: 20px;
+           list-style-type: none;
+       }
+       li {
+           text-align: left;
+           margin-left: 20px;
+       }
     }
     &__more {
         padding: 5px;
-        // background: #fefefe;
         text-align: center;
         display: block;
         margin: 0 auto;

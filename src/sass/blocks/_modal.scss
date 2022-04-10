@@ -1,6 +1,7 @@
 .modal {
     position: relative;
     &__overlay {
+        z-index: 100;
         display: none;
         position: fixed;
         width: 100%;
@@ -24,8 +25,8 @@
     }
     &__close {
         position: absolute;
-        top: 0;
-        right: 0px;
+        top: 2px;
+        right: 3px;
         font-size: 41px;
         color: var(--main-color);
         line-height: 20px;
