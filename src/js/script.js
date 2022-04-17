@@ -141,6 +141,18 @@ function gallery () {
 
 gallery();
 
+function infoGallery () {
+    // const infoSliders = document.querySelectorAll(`.info__gallery`);
+    const infoSliders = document.querySelector(`.info__gallery`);
+    initSmallGallerySlider(infoSliders);
+
+    // for (let i = 0; i < infoSliders.length; i++) {
+    //     initSmallGallerySlider(infoSliders[i]);
+    // }
+}
+
+infoGallery();
+
 
 function initSmallGallerySlider (obj) {
     const objSlider = obj.querySelector(`.slider`);
@@ -226,6 +238,7 @@ function showMoreInfo () {
     const moreButtons = document.querySelectorAll(`.services__more`);
     const infoContent = document.querySelectorAll(`.info__content`);
     const infoClose = document.querySelector(`.info__close`);
+    const button = document.querySelector(`.button_info`);
 
     for (let i = 0; i < moreButtons.length; i++) {
             moreButtons[i].addEventListener(`click`, () => {
@@ -233,6 +246,10 @@ function showMoreInfo () {
             infoContent[i].classList.add(`active`);
             
             infoClose.addEventListener(`click`, () => {
+                infoOverlay.classList.remove(`active`);
+                infoContent[i].classList.remove(`active`);
+            });
+            button.addEventListener(`click`, () => {
                 infoOverlay.classList.remove(`active`);
                 infoContent[i].classList.remove(`active`);
             });
@@ -244,6 +261,23 @@ function showMoreInfo () {
 
 showMoreInfo();
 
+
+function smoothScroll () {
+    const smoothLinks = document.querySelectorAll('a[href^="#"]');
+    for (let smoothLink of smoothLinks) {
+        smoothLink.addEventListener('click', function (e) {
+            e.preventDefault();
+            const id = smoothLink.getAttribute('href');
+
+            document.querySelector(id).scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        });
+    }
+}
+
+smoothScroll();
 
 
 

@@ -21,6 +21,7 @@ function toggleHeader(humburger) {
 function menu() {
     const humburger = document.querySelector(`.humburger`);
     const overlay = document.querySelector(`.overlay`);
+    const menuItem = document.querySelectorAll(`.menu__list_item`);
     // const menu = document.querySelector(`.header__menu-item`);
 
     
@@ -31,7 +32,7 @@ function menu() {
         return;
     });
    
-    overlay.addEventListener(`click`, () => {
+    menuItem.addEventListener(`click`, () => {
         humburger.classList.remove(`active`);
         overlay.classList.remove(`active`);
         toggleHeader(humburger);
@@ -40,12 +41,7 @@ function menu() {
 
 menu();
 
-// function changeTitle (obj) {
-//     const sectionName = document.querySelector(`.serviceCatalog__sectionName`);
-//     const txt = obj.querySelector(`div`).textContent;
-//     sectionName.innerText = txt;
-//     return;
-// }
+
 
 function submenu () {
     // const btn = document.querySelector(`.servicesCatalog__submenu_header`);

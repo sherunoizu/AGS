@@ -31,6 +31,14 @@
             background: var(--main-color);
             color: #fff;
         }
+        a {
+            color: var(--main-color);
+            text-decoration: none;
+            &:hover {
+                text-decoration: none;
+                color: #fff;
+            }
+        }
     }
 }
 
