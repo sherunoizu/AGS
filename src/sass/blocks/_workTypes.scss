@@ -2,11 +2,11 @@
     &__wrapper {
         margin: 20px 0 15px 0; 
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         flex-wrap: wrap;
     }
     &__item {
-        width: 145px;
+        width: auto;
     }
     &__descr {
         margin-top: 20px;
@@ -19,6 +19,17 @@
             margin: 0 auto;
             height: 70px;
             width: 70px;
+        }
+        ul {
+            li {
+                margin-left: 0;
+            }
+        }
+        &_mini {
+            // margin-top: 10px;
+        }
+        &_big {
+            height: 145px;
         }
     }
     &-second {
@@ -34,5 +45,10 @@
                 }
             }
         }
+    }
+
+    .icons__wrapper {
+        display: flex;
+        justify-content: space-around;
     }
 }

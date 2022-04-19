@@ -143,12 +143,12 @@ gallery();
 
 function infoGallery () {
     // const infoSliders = document.querySelectorAll(`.info__gallery`);
-    const infoSliders = document.querySelector(`.info__gallery`);
-    initSmallGallerySlider(infoSliders);
+    const infoSliders = document.querySelectorAll(`.info__gallery`);
+    // initSmallGallerySlider(infoSliders[1]);
 
-    // for (let i = 0; i < infoSliders.length; i++) {
-    //     initSmallGallerySlider(infoSliders[i]);
-    // }
+    for (let i = 0; i < infoSliders.length; i++) {
+        initSmallGallerySlider(infoSliders[i]);
+    }
 }
 
 infoGallery();
