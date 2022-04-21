@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Работа у нас</title>
 
-    <link rel="stylesheet" href="../css/style.min.css?ver=2">
+    <link rel="stylesheet" href="../css/style.min.css?ver=5">
 </head>
 
 <body>
@@ -61,7 +61,7 @@
                     <li class="menu__list_item">
                         <a href="/#" class="menu__list_link">Главная</a>
                     </li>
-                    <li class="menu__list_item active">
+                    <li class="menu__list_item">
                         <a href="" class="menu__list_link">Работа у нас</a>
                     </li>
                     <li class="menu__list_item">
@@ -70,8 +70,8 @@
                     <li class="menu__list_item">
                         <a href="services.html" class="menu__list_link">список Услуг</a>
                     </li>
-                    <li class="menu__list_item">
-                        <a href="../index.html#partners" class="menu__list_link">аренда</a>
+                    <li class="menu__list_item active">
+                        <a href="rent.html" class="menu__list_link">аренда</a>
                     </li>
 
                 </ul>
@@ -92,86 +92,203 @@
         </div>
     </div>
 
-    <section class="vacanciesPromo">
+    <div class="rentPromo">
         <div class="container">
-            <h2 class="vacanciesPromo__title title">Карьера в "АльфаГидроСтрой"</h2>
-
-            <div class="vacanciesPromo__wrapper">
-                <div class="vacanciesPromo__text">
-                    Мы готовы рассмотреть на вакантные позиции профессионалов, имеющих успешный опыт работы в крупных
-                    российских или международных компаниях. <br><br>Для своих сотрудников мы стараемся создать
-                    максимально
-                    комфортные условия труда, позволяющие реализовать свой профессиональный потенциал. <br><br>
-                    Наши специалисты имеют возможности для профессионального развития и карьерного роста.
-                </div>
-                <div class="vacanciesPromo__feedback">
-                    <div class="vacanciesPromo__phones">
-                        <div class="vacanciesPromo__phones-title">Телефоны</div>
-                        <a href="tel:+79258895598" class="vacanciesPromo__phones-item">+7 (925) 889-55-98</a>
-                        <a href="tel:+74952225454" class="vacanciesPromo__phones-item">+7 (495) 222-54-54</a>
-                    </div>
-                    <div class="vacanciesPromo__email">
-                        <div class="vacanciesPromo__email-title">E-mail</div>
-                        <div class="vacanciesPromo__email-item">ags@example.com</div>
-                    </div>
-                </div>
-                <div class="vacanciesPromo__resume">
-                    <p class="vacanciesPromo__info">
-                        Оставьте заявку, указав в сообщении желаемую должность, и Наш менеджер свяжется с Вами в
-                        ближайшее время!
-                    </p>
-                    <a href="../index.html#consultation"><button class="vacanciesPromo__button">Оставить
-                            заявку</button></a>
-                </div>
+            <div class="rentPromo__wrapper">
+                <h2 class="rentPromo__title">Аренда спецтехники в Москве и МО</h2>
+                <a href="https://www.instagram.com/arenda.ags_oz/" target="_blank" class="servicesCatalog__social-item">
+                    <label class="label_instagram" for="instagram">@arenda.ags_oz</label>
+                    <img src="../icons/icons8-instagram.svg" alt="instagram" name="instagram">
+                </a>
             </div>
+            <p>Наша компания «АльфаГидроСтрой» предлагает услуги в области аренды спецтехники в Москве и
+                Московской области. Взять напрокат колесные, гусеничные машины можно на выгодных
+                условиях. Мы сотрудничаем с частными предпринимателями, крупными организациями.</p>
 
-            <hr>
+
+            <p>
+                Заказывая строительную, дорожную технику, вспомогательное оборудование в нашей компании, вы
+                экономите на их содержании и покупке. Мы предлагаем прокат следующей спецтехники для работы
+                на стройке:
+            </p>
         </div>
-    </section>
+    </div>
 
-    <section class="vacancies">
+    <section class="rent">
         <div class="container">
-            <h3 class="vacancies__title">Актуальные вакансии</h3>
-            <div class="vacancies__wrapper">
-                <div id="vacancy_0" class="vacancies__block">
-                    <div class="vacancies__block-visible">
-                        <div class="vacancies__block_name">Управляющий</div>
-                        <div class="vacancies__block_pay">от 100.000 ₽</div>
-                        <img src="../icons/vacancies/downArrow.svg" alt="" class="vacancies__block_downArrow">
+            
+            <ul class="tech__tabs">
+                <li class="tech__tab active">
+                    <div>Экскаватор Komatsu</div>
+                </li>
+                <li class="tech__tab">
+                    <div>Экскаватор Hitachi</div>
+                </li>
+                <li class="tech__tab">
+                    <div>Манипулятор КАМАЗ</div>
+                </li>
+                <li class="tech__tab">
+                    <div>Грузоперевозки</div>
+                </li>
+            </ul>
+
+            <p class="tech__descr">Техника заправлена, укомплектована необходимыми техническими средствами.</p>
+
+
+            <div class="tech__content">
+                <div class="tech__item active">
+                    <div class="tech__item_title">Аренда экскаватора-погрузчика Komatsu</div>
+                    <div class="rent__wrapper">
+                        <div class="rent__gallery">
+                            <div id="rentSlider_1" class="slider">
+                                <div class="slider-item">
+                                    <img src="../img/ServicesSection/service13/komatsu1.jpg" alt="">
+                                </div>
+                                <div class="slider-item">
+                                    <img src="../img/ServicesSection/service13/komatsu1.jpg" alt="">
+                                </div>
+                                <div class="slider-item">
+                                    <img src="../img/ServicesSection/service13/komatsu1.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="controls">
+                                <button type="button" class="prev">
+                                    <span class="b b1"></span>
+                                    <span class="b b2"></span>
+                                </button>
+                                <button type="button" class="next">
+                                    <span class="b b1"></span>
+                                    <span class="b b2"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="rent__descr_small">
+                            <p>
+                                Экскаватор-погрузчик WB93R-5 отличается высокой производительностью и
+                                первоклассными эксплуатационными характеристиками, в том числе повышенными
+                                значениями вырывного усилия и грузоподъемности. Основной конструктивной
+                                особенностью гидравлики экскаватора-погрузчика Komatsu является гидравлическая
+                                система с закрытым центром (CLSS).
+                            </p>
+                        </div>
+                        <div class="rent__descr_big">
+                            <h5>Выдающиеся рабочие характеристики:</h5>
+                            <ul>
+                                <li>– Высокая производительность;</li>
+                                <li>– Гидравлическая система с закрытым центром (CLSS);</li>
+                                <li>– Аксиально-поршневой насос регулируемой производительности;</li>
+                                <li>– «Мощностной» и «Экономичный» режимы работы;</li>
+                                <li>– Джойстик пропорционального управления (PPC) для фронтального погрузчика.
+                                </li>
+                            </ul>
+                            <h5>Передовая конструкция:</h5>
+                            <ul>
+                                <li>– Оптимальная компоновка погрузчика с параллельной связью;</li>
+                                <li>– Превосходные рабочие показатели при погрузке;</li>
+                                <li>– S-образная стрела;</li>
+                                <li>– Функционально продуманное расположение гидравлических трубопроводов и
+                                    шлангов вдоль стрелы;</li>
+                                <li>– Высочайшие показатели по вырывному усилию и грузоподъемности.
+                                </li>
+                            </ul>
+                            <h5>Исключительно комфортные условия работы:</h5>
+                            <ul>
+                                <li>– Эргономичное внутреннее пространство кабины;</li>
+                                <li>– Пониженный уровень шума в кабине;</li>
+                                <li>– Кондиционер, устанавливаемый по дополнительному заказу;</li>
+                                <li>– Сиденья с амортизацией, включая исполнение на пневмоподвеске с широкими
+                                    возможностями
+                                    настройки.</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="vacancies__block_content">
-                        <div class="vacancies__block_descr">Очень классная работа всем советую! Очень классная работа
-                            всем советую!Очень классная работа всем советую!</div>
-                        <a href="../index.html#consultation"><button class="vacancies__button">Оставить
-                                заявку</button></a>
+                </div>
+
+                <div class="tech__item">
+                    <div class="tech__item_title">Аренда экскаватора Hitachi ZX180LCN-5G</div>
+                    <div class="rent__wrapper">
+                        <div class="rent__gallery">
+                            <div id="rentSlider_1" class="slider">
+                                <div class="slider-item">
+                                    <img src="../img/ServicesSection/service13/hitachi_1.jpg" alt="">
+                                </div>
+                                <div class="slider-item">
+                                    <img src="../img/ServicesSection/service13/hitachi_1.jpg" alt="">
+                                </div>
+                                <div class="slider-item">
+                                    <img src="../img/ServicesSection/service13/hitachi_1.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="controls">
+                                <button type="button" class="prev">
+                                    <span class="b b1"></span>
+                                    <span class="b b2"></span>
+                                </button>
+                                <button type="button" class="next">
+                                    <span class="b b1"></span>
+                                    <span class="b b2"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="rent__descr_small">
+                            <p>
+                                Гидравлический экскаватор Hitachi ZX180LCN-5G на гусеничном ходу обладает
+                                наибольшим размером среди представителей своего класса. Машина относится к
+                                малым экскаваторам Хитачи. Наш сайт предлагает ознакомиться с техническими
+                                характеристиками ZX180 и купить его по цене, установленной производителем.
+                                ООО «Хит Машинери» является официальным дилером Hitachi в России.
+                            </p>
+                        </div>
+                        <div class="rent__descr_big">
+                            <h5>Долговечность</h5>
+                            <p>
+                                Усовершенствованная система охлаждения двигателя позволяет ему работать в
+                                оптимальных условиях даже при длительной максимальной нагрузке и высокой
+                                температуре окружающего воздуха.
+                                Все шарнирные соединения навесного оборудования ZAXIS180 снабжены втулками,
+                                которые заполняет консистентная смазка. Цилиндры гидравлической системы оснащены
+                                демпфирующими устройствами с целью продления срока их службы. Стрела усилена в
+                                верхней части за счет увеличения толщины составляющих ее элементов. Также
+                                увеличено сечение кронштейнов основания. На поверхность пальца крепления ковша
+                                термическим методом нанесено износостойкое напыление.
+                            </p>
+                            <h5>Производительность:</h5>
+                            <p>
+                                Двигатель оснащен регулятором частоты вращения и системой непосредственного
+                                впрыска топлива. Также установлен турбокомпрессор и промежуточный охладитель.
+                                Система корректировки работы двигателя снижает расход топлива на 4%, а высокая
+                                мощность сокращает длительность рабочего цикла.
+                                В режиме ЕСО Hitachi 180 потребляет на 26% меньше топлива, чем при максимальной
+                                нагрузке. Производительность при этом сохраняется.
+                                Усовершенствованная гидросистема HIOS III обеспечивает высокую скорость
+                                выполнения операций.
+                                Режимы увеличения мощности позволяют при необходимости кратковременно повысить
+                                на 10% усилие резания грунта или подъема стрелы.
+                            </p>
+                            <h5>Исключительно комфортные условия работы:</h5>
+                            <p>
+                                Система кондиционирования поддерживает в кабине ZX180-5G комфортные для
+                                оператора условия микроклимата вне зависимости от времени года. Проработанная
+                                организация управления экскаватором, удобное регулируемое сидение помогут
+                                избежать переутомления при длительной работе.
+                            </p>
+                        </div>
                     </div>
+                </div>
+
+                <div class="tech__item">
 
                 </div>
-                <div id="vacancy_1" class="vacancies__block">
-                    <div class="vacancies__block-visible">
-                        <div class="vacancies__block_name">Управляющий</div>
-                        <div class="vacancies__block_pay">от 100.000 ₽</div>
-                        <img src="../icons/vacancies/downArrow.svg" alt="" class="vacancies__block_downArrow">
-                    </div>
-                    <div class="vacancies__block_content">
-                        <div class="vacancies__block_descr">Очень классная работа всем советую!</div>
-                        <a href="../index.html#consultation"><button class="vacancies__button">Оставить
-                                заявку</button></a>
-                    </div>
+                <div class="tech__item">
+
                 </div>
-                <div id="vacancy_2" class="vacancies__block">
-                    <div class="vacancies__block-visible">
-                        <div class="vacancies__block_name">Управляющий</div>
-                        <div class="vacancies__block_pay">от 100.000 ₽</div>
-                        <img src="../icons/vacancies/downArrow.svg" alt="" class="vacancies__block_downArrow">
-                    </div>
-                    <div class="vacancies__block_content">
-                        <div class="vacancies__block_descr">Очень классная работа всем советую!</div>
-                        <a href="../index.html#consultation"><button class="vacancies__button">Оставить
-                                заявку</button></a>
-                    </div>
-                </div>
+                
+
             </div>
+
+
+
+            
         </div>
     </section>
 
@@ -200,7 +317,7 @@
                     </div>
                     <div class="footer__menu">
                         <a href="../index.html" class="footer__menu_item">главная</a>
-                        <a href="../index.html#partners" class="footer__menu_item">аренда</a>
+                        <a href="rent.html" class="footer__menu_item">аренда</a>
                         <a href="gallery.html" class="footer__menu_item">галерея</a>
                         <a href="../index.html#services" class="footer__menu_item">Список услуг</a>
                         <a href="vacancies.html" class="footer__menu_item">Работа у нас</a>
@@ -223,8 +340,9 @@
     </section>
 
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="../js/menuActions.js"></script>
-    <script src="../js/vacancies.js"></script>
+    <script src="../js/rent.js"></script>
 
 </body>
 

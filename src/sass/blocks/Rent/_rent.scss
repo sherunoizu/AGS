@@ -1,52 +1,7 @@
-.info {
-    
-    &__overlay {
-        z-index: 10000;
-        display: none;
-        position: fixed;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        background-color: rgba(0, 0, 0, 0.56);
-        &.active {
-            display: block;
-        }
-    }
-    &__modal {
-        overflow-y: auto;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-color: rgb(242, 242, 242);
-        width: 95%;
-        height: 80vh;
-        padding: 20px 30px 30px 40px;
-        
-    }
-    &__close {
-            position: absolute;
-            font-size: 41px;
-            color: var(--main-color);
-            line-height: 20px;
-            cursor: pointer;
-            transform: scale(1.3);
-            top: 7px;
-            right: 7px;
-        }
-    &__content {
-        display: none;
-        &.active {
-            display: block;
-        }
-        
-    }
-    &__title {
-        font-size: 25px;
-        text-align: center;
-    }
-    &__descr {
-        padding: 35px 0 0 0;
+.rent {
+    &__wrapper {
+        margin-top: 15px;
+        margin-bottom: 15px;
         display: grid;
         grid-template-columns: 450px auto;
         grid-template-rows: 450px;
@@ -55,40 +10,26 @@
         row-gap: 30px;
     }
     
-    &__text {
-        // border: 1px solid black;
-        padding: 0px 25px;
-        font-size: 16px;
-        h5 {
-            text-align: center;
-            font-size: 18px;
-            margin-bottom: 0;
+    &__descr {
+        &_small {
+            // border: 1px solid black;
+            padding: 0 10px 10px 10px;
+            font-size: 16px;
         }
-        ul {
-            margin-top: 15px;
-            list-style-type: none;
-            li{
-                margin-left: 15px;
-            }
-        }
-        &_bot {
-            padding: 5px 0px;
+        &_big {
             // border: 1px solid red;
             grid-column: 1 / 3;
-            font-size: 16px;
-            h5 {
-                text-align: center;
-                font-size: 18px;
-                margin-bottom: 10px;
-            }
             ul {
-                margin-top: 15px;
                 list-style-type: none;
-            li {
-                margin-left: 15px;
+                li {
+                    margin-left: 10px;
+                    text-align: center;
+                }
             }
-        }
-            
+            h5 {
+                font-size: 19px;
+                text-align: center;
+            }
         }
     }
 
@@ -98,11 +39,20 @@
 
 
 
+
     &__gallery {
+        .slider {
+            display: flex;
+        }
+        .tns-liveregion {
+            display: none;
+        }
+        overflow: hidden;
         position: relative;
         width: 450px;
         margin-right: 30px;
         img {
+
             width: 450px;
             height: 450px;
             object-fit: cover;
@@ -202,3 +152,65 @@
     }
 }
 
+.tech {
+            &__descr {
+                margin-top: 20px;
+                text-align: center;
+            }
+            &__tabs {
+                list-style-type: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 0;
+                padding-left: 0;
+            }
+
+            &__tab {
+                text-transform: uppercase;
+                font-size: 18px;
+                font-weight: 500;
+                color: #6b6b6b;
+                width: 320px;
+                height: 50px;
+                border: solid 2px #d0d0d0;
+                text-align: center;
+                line-height: 48px;
+                transform: skewX(-25deg);
+                margin: 0 5px;
+                cursor: pointer;
+                transition: 0.5s all;
+
+                &:hover {
+                    box-shadow: 3px 3px 20px var(--main-color);
+                    border: none
+                }
+
+                div {
+                    transform: skewX(25deg);
+                }
+
+                &.active {
+                    color: #fff;
+                    background-color: var(--main-color);
+                    border: none;
+
+                    &:hover {
+                        box-shadow: 3px 3px 20px var(--main-color);
+                        border: none
+                    }
+                }
+            }
+
+            &__item {
+                display: none;
+                &.active {
+                    display: block;
+                }
+                &_title {
+                    font-weight: 700;
+                    font-size: 30px;
+                    text-align: center;
+                }
+            }
+        }

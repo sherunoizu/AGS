@@ -13,6 +13,7 @@
         text-align: center;
     }
     &__icon {
+        position: relative;
         height: 70px;
         img {
             display: block;
@@ -24,6 +25,14 @@
             li {
                 margin-left: 0;
             }
+        }
+        p {
+            text-align: center;
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+
         }
         &_mini {
             // margin-top: 10px;
