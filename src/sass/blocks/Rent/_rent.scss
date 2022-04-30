@@ -1,7 +1,7 @@
 .rent {
     &__wrapper {
         margin-top: 15px;
-        margin-bottom: 15px;
+        margin-bottom: 30px;
         display: grid;
         grid-template-columns: 450px auto;
         grid-template-rows: 450px;
@@ -12,9 +12,20 @@
     
     &__descr {
         &_small {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
             // border: 1px solid black;
             padding: 0 10px 10px 10px;
             font-size: 16px;
+            p {
+                text-align: center;
+            }
+            h5 {
+                font-size: 16px;
+                text-align: center;
+            }
+            
         }
         &_big {
             // border: 1px solid red;
@@ -28,6 +39,9 @@
             }
             h5 {
                 font-size: 19px;
+                text-align: center;
+            }
+            p {
                 text-align: center;
             }
         }

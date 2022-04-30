@@ -6,4 +6,16 @@
         font-size: 27px;
 
     }
+    &__wrapper {
+        a {
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.label_instagram {
+    cursor: pointer;
+    
 }

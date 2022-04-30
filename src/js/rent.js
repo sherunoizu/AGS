@@ -18,12 +18,12 @@ switchTech();
 
 function rentGallery () {
     const rentSliders = document.querySelectorAll(`.rent__gallery`);
-    initSmallGallerySlider(rentSliders[0]);
-    console.log(rentSliders[0]);
+    // initSmallGallerySlider(rentSliders[0]);
+    // console.log(rentSliders[0]);
 
-    // for (let i = 0; i < rentSliders.length; i++) {
-    //     initSmallGallerySlider(rentSliders[i]);
-    // }
+    for (let i = 0; i < rentSliders.length; i++) {
+        initSmallGallerySlider(rentSliders[i]);
+    }
 }
 
 rentGallery();
