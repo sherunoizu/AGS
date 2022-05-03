@@ -230,6 +230,18 @@
         }
     }
     
+    .rent {
+        &__descr {
+            &_smallScreen {
+                display: block;
+            }
+            &_bigScreen {
+                display: none;
+            }
+        }
+    }
+
+    
 }
 
 @media (max-width: 992px) {
@@ -477,6 +489,25 @@
             padding-right: 0;
         }
     }
+
+    .rent {
+        &__wrapper {
+            grid-template-columns: 1fr;
+        }
+        &__descr {
+            &_big {
+                grid-column: 1;
+            }
+            &_small {
+                padding: 0;
+            }
+        }
+        &__gallery {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+
 
 }
 
@@ -1340,6 +1371,39 @@
         }
         &__button {
             width: 100%;
+        }
+    }
+
+    .tech {
+        &__item {
+            &_title {
+                font-size: 23px;
+            }
+        }
+    }
+
+    .rentPromo {
+        p {
+            text-align: center;
+        }
+    }
+
+
+    .rent {
+        &__wrapper {
+            grid-template-rows: 350px;
+        }
+        &__gallery {
+            width: 100%;
+            height: 350px;
+            img {
+                width: 100%;
+                height: 350px;
+
+            }
+            .controls {
+                // top: calc(100% - 160px);
+            }
         }
     }
 
